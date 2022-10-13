@@ -386,8 +386,12 @@ body {
         width: 97%;
 
     }
-
-    .card_container {
+}
+@media only screen and (max-width: 1050px) {
+    .heading{
+        margin-left: 15% !important;
+    }
+    .card_container{
         display: flex;
         flex-wrap: wrap;
     }
@@ -407,35 +411,32 @@ body {
 
     .Apex_chart_div {
         width: 46% !important;
+        margin-top: 50px !important;
     }
 }
-
-@media only screen and (max-width: 320px) {
-
-    .css-941xlx-MuiInputBase-root .MuiInputBase-input {
-        width: 15px !important;
+@media only screen and (max-width: 630px) {
+    .heading{
+        margin-left: 15% !important;
     }
-
-    .css-hyum1k-MuiToolbar-root {
-        width: 100%;
+    .card_container{
+        display: flex;
+        flex-wrap: wrap;
     }
-
-
-}
-
-@media only screen and (max-width: 1050px) {
-    .inner_card1 {
-        width: 30%;
+    .inner_card1{
+        width: 80% !important;
+        display: block !important;
     }
-
-    .inner_card2 {
-        width: 30%;
+    .inner_card2{
+        width: 80% !important;
+        margin-top: 50px !important;
     }
-
-    .inner_card3 {
-        width: 30%;
+    .inner_card3{
+        width: 80%  !important;
+        margin-top: 50px !important;
+    }.Apex_chart_div{
+        width: 80% !important;
+        margin-top: 50px !important;
     }
-
 }
 
 .graph_cards {
@@ -470,8 +471,13 @@ body {
 
 .inner_graph_container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    /* margin-top: 15px; */
+    justify-content: space-around;
+}
+.activity_div{
+    width: 50%;
 }
 
 .activity_head {
@@ -488,13 +494,14 @@ body {
     display: inline;
 }
 
-/* .spans_div {
-    margin: 0px 5px;
-} */
+.spans_div {
+    width: 50%;
+    margin-left: 10px;
+}
 .sky_blue {
     background-color: aqua;
     height: 20px;
-    width: 15px;
+    width: 20%;
     border: none;
     margin: 0px 2px;
 }
@@ -502,7 +509,7 @@ body {
 .blue {
     background-color: rgb(130, 130, 192);
     height: 50px;
-    width: 15px;
+    width: 20%;
     border: none;
     margin: 0px 2px;
 }
@@ -510,7 +517,7 @@ body {
 .orange {
     background-color: orange;
     height: 30px;
-    width: 15px;
+    width: 20%;
     border: none;
     margin: 0px 2px;
 }
@@ -702,11 +709,8 @@ input::placeholder {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 1094px) {
-    .Apex_chart_div {
-        margin-top: 50px;
-    }
-}
+
+
 
 .chart_graph {
     width: 50%;
@@ -731,7 +735,6 @@ input::placeholder {
 
 .weeks_data {
     display: flex;
-    margin-top: 5px;
 }
 
 .weekly {
@@ -762,4 +765,5 @@ input::placeholder {
 
 .button_div {
     display: flex;
+    margin-top: -15px;
 }
