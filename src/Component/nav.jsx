@@ -24,7 +24,7 @@ const Search = styled('div')(({ theme }) => ({
     backgroundColor: '#112131a',
   },
   marginRight: theme.spacing(12),
-  marginLeft: '20%',
+  marginLeft: '10%',
   width: 'auto',
   [theme.breakpoints.up('lr')]: {
     marginLeft: theme.spacing(100),

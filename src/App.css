@@ -192,12 +192,21 @@ body {
         display: block;
         justify-content: center;
         margin-top: 30px;
+        /* background-color: aqua; */
+        width: 100%;
+        /* width: 30%; */
+
     }
 
     .ant {
-        padding: 4px 15px;
+        /* margin-left: 170px; */
+        /* padding: 4px 15px; */
+        /* background: #5494a3; */
     }
+
 }
+
+
 
 /* Rehan work  */
 
@@ -227,6 +236,10 @@ body {
     width: auto;
 }
 
+.css-1f5y6oa-MuiButtonBase-root-MuiIconButton-root {
+    padding: 0px !important;
+}
+
 .name {
     margin-left: 50px;
     font-size: 15px;
@@ -252,7 +265,7 @@ body {
 
     background-color: var(--color2);
     height: 32px;
-    width: 78px;
+    width: 52px;
     padding-bottom: 43px !important;
     border-radius: 35px;
     padding-right: 13px;
@@ -277,7 +290,7 @@ body {
 
 
 .css-7hnt3q {
-    margin-left: 150px  !important;
+    margin-left: 150px !important;
     width: 88vh !important;
 }
 
@@ -346,6 +359,7 @@ body {
     border-radius: 10px;
     padding: 15px 0px;
 }
+
 .inner_card2 {
     color: var(--white);
     border: 2px solid var(--white);
@@ -356,6 +370,7 @@ body {
     border-radius: 10px;
     padding: 15px 0px;
 }
+
 .inner_card3 {
     border: 2px solid var(--white);
     width: 20%;
@@ -363,33 +378,61 @@ body {
     border-radius: 10px;
     padding: 15px 0px;
 }
+
+
+
 @media only screen and (max-width: 930px) {
-    
-    .card_container{
+    .css-hyum1k-MuiToolbar-root {
+        width: 97%;
+
+    }
+
+    .card_container {
         display: flex;
         flex-wrap: wrap;
     }
-    .inner_card1{
+
+    .inner_card1 {
         width: 46% !important;
     }
-    .inner_card2{
+
+    .inner_card2 {
         width: 46% !important;
     }
-    .inner_card3{
-        width: 46%  !important;
+
+    .inner_card3 {
+        width: 46% !important;
         margin-top: 50px !important;
-    }.Apex_chart_div{
+    }
+
+    .Apex_chart_div {
         width: 46% !important;
     }
 }
+
+@media only screen and (max-width: 320px) {
+
+    .css-941xlx-MuiInputBase-root .MuiInputBase-input {
+        width: 15px !important;
+    }
+
+    .css-hyum1k-MuiToolbar-root {
+        width: 100%;
+    }
+
+
+}
+
 @media only screen and (max-width: 1050px) {
-    .inner_card1{
+    .inner_card1 {
         width: 30%;
     }
-    .inner_card2{
+
+    .inner_card2 {
         width: 30%;
     }
-    .inner_card3{
+
+    .inner_card3 {
         width: 30%;
     }
 
@@ -424,18 +467,22 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .inner_graph_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .activity_head {
     color: var(--black) !important;
     display: block;
 }
+
 .activity {
     color: var(--black) !important;
 }
+
 .activity_h {
     color: var(--black) !important;
     display: inline;
@@ -451,6 +498,7 @@ body {
     border: none;
     margin: 0px 2px;
 }
+
 .blue {
     background-color: rgb(130, 130, 192);
     height: 50px;
@@ -458,6 +506,7 @@ body {
     border: none;
     margin: 0px 2px;
 }
+
 .orange {
     background-color: orange;
     height: 30px;
@@ -465,6 +514,7 @@ body {
     border: none;
     margin: 0px 2px;
 }
+
 .div {
     margin: 30px 33px;
 
@@ -531,9 +581,11 @@ td {
     .inner_card1 {
         width: 100%;
     }
+
     .inner_card2 {
         width: 100%;
     }
+
     .inner_card3 {
         width: 100%;
     }
@@ -597,9 +649,11 @@ td {
 .ant-table-pagination-rightt {
     display: none;
 }
-.css-hyum1k-MuiToolbar-root{
+
+.css-hyum1k-MuiToolbar-root {
     padding-left: -9px;
 }
+
 th {
     color: var(--color2) !important;
 }
@@ -647,8 +701,9 @@ input::placeholder {
     height: 190px !important;
     border-radius: 10px;
 }
+
 @media only screen and (max-width: 1094px) {
-    .Apex_chart_div{
+    .Apex_chart_div {
         margin-top: 50px;
     }
 }
