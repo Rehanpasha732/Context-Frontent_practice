@@ -49,7 +49,7 @@ class ApexChart extends React.Component {
                 <Chart options={this.state.options} series={this.state.series} type="area" width='100%' height={180} />
                 <div className="chart_graph">
                     <div className="chart_graph_text">
-                        <span className="weekly">Wee</span><br /><span className="weekly">kly</span><br />
+                        <span className="weekly">Wee</span><br /><span className="weekly">kly</span>
                         <div className="weeks_data">
                             <div className="this_week">This week
                                 <p className="week_percentage">+72.0%</p>
