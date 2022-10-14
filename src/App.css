@@ -43,6 +43,7 @@ body {
 .img {
     height: auto;
     width: 170px;
+    margin-top: -30px;
     margin-left: -20px;
 }
 
@@ -140,6 +141,7 @@ body {
 
 .side_bar {
     margin-top: -230px;
+    background-color: var(--backgroundcolor);
 }
 
 .second_drag {
@@ -153,14 +155,14 @@ body {
 @media screen and (max-width:670px) {
 
     .side_bar {
-        margin-top: -175px;
+        margin-top: -145px;
     }
 
     .ant-upload-drag-container,
     .ant-upload-btn,
     .ant-upload-drag {
-        width: 134px !important;
-        text-align: center;
+        width: 100% !important;
+        text-align: center !important;
     }
 
     .css-1pz7awu-MuiButtonBase-root-MuiIconButton-root {
@@ -168,8 +170,8 @@ body {
     }
 
     .ant-upload.ant-upload-drag {
-        width: 134px !important;
-        margin-left: 160px;
+        width: 100% !important;
+        text-align: center !important;
     }
 
     .drag_container {
@@ -177,7 +179,8 @@ body {
     }
 
     .img {
-        width: 140px;
+        width: 119px;
+        margin-left: -8px;
     }
 
     .bar_side {
@@ -189,13 +192,15 @@ body {
     }
 
     .second_drag {
-        display: block;
-        justify-content: center;
         margin-top: 30px;
         /* background-color: aqua; */
         width: 100%;
         /* width: 30%; */
 
+        margin-left: auto;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
     }
 
     .ant {
@@ -709,8 +714,11 @@ input::placeholder {
     border-radius: 10px;
 }
 
-
-
+@media only screen and (max-width: 1094px) {
+    .Apex_chart_div {
+        margin-top: 50px;
+    }
+}
 
 .chart_graph {
     width: 50%;
