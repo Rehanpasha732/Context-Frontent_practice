@@ -85,7 +85,7 @@ const Nav = () => {
                         />
 
                     </div>
-                    <div className='card_div' style={{ marginLeft: '90px' }}>
+                    <div className='card_div' style={{ marginLeft: '82px' }}>
                         <Cards />
                     </div>
                 </div>

@@ -15,6 +15,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import DialpadIcon from '@mui/icons-material/Dialpad';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
 // import './App.css'
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -136,7 +137,7 @@ export default function Navbar() {
           color="inherit"
         >
           <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
+            <NotificationsIcon fontSize='sm' />
           </Badge>
         </IconButton>
         <p>Notifications</p>
@@ -192,7 +193,7 @@ export default function Navbar() {
               color="inherit"
             >
               
-              <span className='notification'><NotificationsIcon /> <Badge  badgeContent={15} style={{fontSize:'10px'}} > </Badge></span> 
+              <span className='notification'><NotificationsIcon  fontSize='small' /> <Badge  badgeContent={15} style={{fontSize:'1px'}} > </Badge></span> 
              
             </IconButton>
             <IconButton

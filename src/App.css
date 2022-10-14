@@ -149,9 +149,11 @@ body {
 }
 
 .div_cards {
-    margin-left: 170px;
+    margin-left: 150px;
 }
-
+.css-hyum1k-MuiToolbar-root{
+    padding-left: 85px !important;
+}
 @media screen and (max-width:670px) {
 
     .side_bar {
@@ -187,18 +189,15 @@ body {
         width: 110px;
     }
 
-    .div_cards {
+    /* .div_cards {
         margin-left: 90px;
-    }
+    } */
 
     .second_drag {
         margin-top: 30px;
         /* background-color: aqua; */
         width: 100%;
         /* width: 30%; */
-
-        margin-left: auto;
-        margin-left: 10%;
         display: flex;
         justify-content: center;
     }
@@ -210,7 +209,9 @@ body {
     }
 
 }
-
+.ant-upload.ant-upload-drag .ant-upload{
+    padding-left: 90px;
+}
 
 
 /* Rehan work  */
@@ -269,11 +270,11 @@ body {
 .notification {
 
     background-color: var(--color2);
-    height: 32px;
-    width: 52px;
-    padding-bottom: 43px !important;
+    /* height: 32px;
+    width: 52px; */
+    /* padding-bottom: 43px !important; */
     border-radius: 35px;
-    padding-right: 13px;
+    /* padding-right: 13px; */
 
 }
 
@@ -286,13 +287,6 @@ body {
 .css-7hnt3q {
     margin-left: 150px !important;
     width: 88vh !important;
-}
-
-.MuiToolbar-root,
-.MuiToolbar-gutters,
-.MuiToolbar-regular,
-.css-hyum1k-MuiToolbar-root {
-    margin-left: 13px !important;
 }
 
 .badge {
@@ -441,30 +435,70 @@ body {
 }
 
 .div {
-    margin: 30px 30px;
+    margin: 30px 20px;
     /* margin: 10px 5px; */
     padding: 20px;
-    width: 357px;
+    width: 357px !important;
     height: 250px;
     border: 2px solid var(--white);
     border-radius: 10px;
 }
 
 .cards {
-    margin: 30px 30px;
+    margin: 30px 20px;
     /* margin: 10px 5px; */
-    width: 357px;
+    width: 357px !important;
     height: 250px;
     border: 2px solid var(--white);
     border-radius: 10px;
     color: var(--white);
 }
-
+@media screen and (max-width: 503px) {
+    .div{
+        width: 320px !important;
+        margin: 30px 10px !important;
+    }.cards{
+        width: 320px !important;
+        margin: 30px 10px !important;
+    }
+  }
+  @media screen and (max-width: 448px) {
+    .div{
+        width: 300px !important;
+        margin: 30px 0px !important;
+    }.cards{
+        width: 300px !important;
+        margin: 30px 0px !important;
+        height: auto;
+    }
+  }
+  @media screen and (max-width: 406px) {
+    .div{
+        width: 98% !important;
+        margin: auto !important;
+    }.cards{
+        width: 98% !important;
+        margin: auto !important;
+        height: auto;
+    }
+  }
+  @media screen and (max-width: 391px) {
+    .div{
+        width: 98% !important;
+        margin: 0 !important;
+    }.cards{
+        width: 98% !important;
+        margin: 0 !important;
+        height: auto;
+    }
+  }
 .graph_cards {
     display: flex;
     justify-content: center;
 }
-
+.MuiTypography-root, .MuiTypography-h6, .MuiTypography-noWrap, .css-1futezt-MuiTypography-root{
+    margin-left: 30px !important;
+}
 .inner_graph_container {
     display: flex;
     /* flex-wrap: wrap; */
@@ -517,16 +551,9 @@ body {
     border: none;
     margin: 0px 2px;
 }
-
-.div {
-    margin: 30px 33px;
-
-}
-
 @media screen and (max-width: 600px) {
     .cards {
         width: 100%;
-        margin-left: 5px;
     }
 }
 
@@ -555,16 +582,16 @@ td {
 }
 
 @media screen and (max-width: 470px) {
-    td {
+    /* td {
         padding: 5px 12px;
     }
 
     table {
         margin: 0px 0px;
-    }
+    } */
 
-    .div {
-        margin: 10px -30px;
+    /* .div {
+        margin: 20px -25px;
         padding: 14px;
         width: 258px;
         height: 268px;
@@ -573,13 +600,13 @@ td {
     }
 
     .cards {
-        margin: 25px -39px;
+        margin: 20px -25px;
         height: 322px;
         border: 2px solid var(--white);
         border-radius: 10px;
         color: var(--white);
         width: 255px;
-    }
+    } */
 
     .inner_card1 {
         width: 100%;
@@ -636,7 +663,7 @@ td {
 
 .graph_div {
     height: 150px;
-    margin: 20px 0px 0px 10px;
+    /* margin: 20px 0px 0px 10px; */
 }
 
 .ant-progress-text {
@@ -705,11 +732,11 @@ input::placeholder {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 1094px) {
+/* @media only screen and (max-width: 1094px) {
     .Apex_chart_div {
         margin-top: 50px;
     }
-}
+} */
 
 .chart_graph {
     width: 50%;
