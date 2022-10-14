@@ -23,7 +23,6 @@ const Uploader = () => (
             <div className="abc">
                 <Dragger {...props}>
                     <button className="ant"> Upload  Your File Here</button>
-
                 </Dragger>
             </div>
         </div>

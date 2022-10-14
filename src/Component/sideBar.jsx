@@ -43,6 +43,7 @@ const items = [
     getItem('Project Activities', '9', <AcUnitOutlinedIcon />),
     getItem('Project Workflow', '10', <ApartmentOutlined />),
     getItem('Web Archivees', '11', <FileDoneOutlined />),
+    getItem(<p style={{ display: 'none' }}>p</p>),
 ];
 const Nav = () => {
     const [collapsed, setCollapsed] = useState(true);
@@ -58,7 +59,7 @@ const Nav = () => {
             {collapsed ?
                 <div className='siderMain_div position'>
                     <div
-                        style={{ width: 50 }} className='side_bar'>
+                        style={{ width: 79 }} className='side_bar'>
                         <Button
                             type="primary"
                             onClick={toggleCollapsed}
@@ -84,14 +85,14 @@ const Nav = () => {
                         />
 
                     </div>
-                    <div className='card_div' style={{marginLeft:'90px'}}>
+                    <div className='card_div' style={{ marginLeft: '90px' }}>
                         <Cards />
                     </div>
                 </div>
                 :
                 <div className='siderMain_div position'>
                     <div
-                     className='side_bar bar_side'>
+                        className='side_bar bar_side'>
                         <Button
                             type="primary"
                             onClick={toggleCollapsed}
