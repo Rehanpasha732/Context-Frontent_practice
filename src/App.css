@@ -9,7 +9,9 @@
     --white: white;
     --card_side_color: #beb9b9;
 }
-
+body{
+    background-color:#12131a;
+}
 .ant-upload.ant-upload-select-picture-card {
     width: auto !important;
     border: 1px solid var(--bgColor) !important;
@@ -269,14 +271,21 @@ body {
 
 .notification {
 
-    background-color: var(--color2);
-    /* height: 32px;
-    width: 52px; */
-    /* padding-bottom: 43px !important; */
-    border-radius: 35px;
+    /* background-color: var(--color2); */
+    padding-right: 10px;
+    height: 30px;
+    padding-bottom: 20px;
+    width: 50px;
+    /* padding-bottom: 40px !important; */
+    /* margin-bottom: 10px; */
+    border-radius: 20px;
     /* padding-right: 13px; */
 
 }
+.css-ptiqhd-MuiSvgIcon-root{
+margin-bottom: 20px;
+}
+
 
 .css-i4bv87-MuiSvgIcon-root {
     font-size: 22px !important;
