@@ -281,17 +281,6 @@ body {
     font-size: 22px !important;
 }
 
-@media (min-width: 0px) {
-    .css-1futezt-MuiTypography-root {
-        display: block !important;
-        margin-top: 14px !important;
-    }
-
-    .css-1futezt-MuiTypography-root {
-        overflow: visible !important;
-        text-overflow: unset !important;
-    }
-}
 
 
 .css-7hnt3q {
@@ -447,13 +436,15 @@ body {
 .graph_cards {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .div {
     margin: 30px 20px;
     /* margin: 10px 5px; */
     padding: 20px;
-    width: 330px;
+    width: 355px;
     height: 250px;
     border: 2px solid var(--white);
     border-radius: 10px;
@@ -462,7 +453,7 @@ body {
 .cards {
     margin: 30px 30px;
     /* margin: 10px 5px; */
-    width: 330px;
+    width: 355px;
     height: 250px;
     border: 2px solid var(--white);
     border-radius: 10px;
