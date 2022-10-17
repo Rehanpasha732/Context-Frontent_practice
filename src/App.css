@@ -160,7 +160,7 @@ body {
 }
 
 .div_cards {
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 .css-hyum1k-MuiToolbar-root {
@@ -343,74 +343,6 @@ td {
     border-radius: 10px;
     color: var(--white);
     padding-bottom: 20px;
-}
-
-@media only screen and (max-width: 1115px) {
-    .div {
-        width: 50% !important;
-    }
-
-    .cards {
-        width: 45% !important;
-    }
-}
-
-@media only screen and (max-width: 998px) {
-    .div {
-        width: 60% !important;
-    }
-
-    .cards {
-        width: 60% !important;
-    }
-}
-
-@media only screen and (max-width: 630px) {
-    .div {
-        width: 80% !important;
-    }
-
-    .cards {
-        width: 80% !important;
-    }
-}
-
-@media only screen and (max-width: 498px) {
-    .div {
-        width: 85% !important;
-    }
-
-    .cards {
-        width: 85% !important;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .div {
-        width: 90% !important;
-        margin: 30px 10px;
-    }
-
-    .cards {
-        width: 90% !important;
-        margin: 30px 10px;
-    }
-
-    td {
-        padding: 3px 15px;
-    }
-}
-
-@media only screen and (max-width: 410px) {
-    .div {
-        width: 95% !important;
-        margin: 30px 0px;
-    }
-
-    .cards {
-        width: 95% !important;
-        margin: 30px 0px;
-    }
 }
 
 .graph_cards {
@@ -676,6 +608,74 @@ input::placeholder {
 
 /* Media Query */
 
+@media only screen and (max-width: 1115px) {
+    .div {
+        width: 50% !important;
+    }
+
+    .cards {
+        width: 45% !important;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .div {
+        width: 60% !important;
+    }
+
+    .cards {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .div {
+        width: 80% !important;
+    }
+
+    .cards {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .div {
+        width: 85% !important;
+    }
+
+    .cards {
+        width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .div {
+        width: 90% !important;
+        margin: 30px 10px;
+    }
+
+    .cards {
+        width: 90% !important;
+        margin: 30px 10px;
+    }
+
+    td {
+        padding: 3px 15px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .div {
+        width: 95% !important;
+        margin: 30px 0px;
+    }
+
+    .cards {
+        width: 95% !important;
+        margin: 30px 0px;
+    }
+}
+
 @media only screen and (max-width: 1050px) {
     .heading {
         margin-left: 15% !important;
@@ -822,9 +822,3 @@ input::placeholder {
         margin: 0%;
     }
 }
-
-/* @media only screen and (max-width: 375px) {
-    .margin {
-       margin-left: 60px !important;
-    }
-} */
