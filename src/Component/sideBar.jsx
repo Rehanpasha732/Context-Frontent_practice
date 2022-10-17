@@ -51,7 +51,6 @@ const items = [
     getItem('Project Activities', '9', <AcUnitOutlinedIcon />),
     getItem('Project Workflow', '10', <ApartmentOutlined />),
     getItem('Web Archivees', '11', <FileDoneOutlined />),
-    getItem(<p style={{ display: 'none' }}>p</p>),
 ];
 const Nav = () => {
     const [collapsed, setCollapsed] = useState(true);

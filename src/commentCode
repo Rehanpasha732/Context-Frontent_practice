@@ -165,3 +165,30 @@
     background-color: var(--color2) !important;
     border-radius: 10px;
 } */
+
+
+///* td {
+    padding: 5px 12px;
+}
+
+table {
+    margin: 0px 0px;
+} */
+
+/* .div {
+    margin: 20px -25px;
+    padding: 14px;
+    width: 258px;
+    height: 268px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+}
+
+.cards {
+    margin: 20px -25px;
+    height: 322px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    color: var(--white);
+    width: 255px;
+} */
