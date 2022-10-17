@@ -160,7 +160,7 @@ body {
 }
 
 .div_cards {
-    margin-left: 25%;
+    margin-left: 10%;
 }
 
 .css-hyum1k-MuiToolbar-root {
@@ -317,6 +317,7 @@ body {
     width: 100%;
     margin-top: 30px;
 }
+
 .tr {
     color: blue;
 }
@@ -324,6 +325,7 @@ body {
 td {
     padding: 5px 20px;
 }
+
 .div {
     margin: 30px 20px;
     padding: 20px;
@@ -342,61 +344,75 @@ td {
     color: var(--white);
     padding-bottom: 20px;
 }
+
 @media only screen and (max-width: 1115px) {
-    .div{
+    .div {
         width: 50% !important;
     }
-    .cards{
+
+    .cards {
         width: 45% !important;
     }
 }
+
 @media only screen and (max-width: 998px) {
-    .div{
+    .div {
         width: 60% !important;
     }
-    .cards{
+
+    .cards {
         width: 60% !important;
     }
 }
+
 @media only screen and (max-width: 630px) {
-    .div{
+    .div {
         width: 80% !important;
     }
-    .cards{
+
+    .cards {
         width: 80% !important;
     }
 }
+
 @media only screen and (max-width: 498px) {
-    .div{
+    .div {
         width: 85% !important;
     }
-    .cards{
+
+    .cards {
         width: 85% !important;
     }
 }
+
 @media only screen and (max-width: 430px) {
-    .div{
+    .div {
         width: 90% !important;
         margin: 30px 10px;
     }
-    .cards{
+
+    .cards {
         width: 90% !important;
         margin: 30px 10px;
     }
+
     td {
         padding: 3px 15px;
     }
 }
+
 @media only screen and (max-width: 410px) {
-    .div{
+    .div {
         width: 95% !important;
         margin: 30px 0px;
     }
-    .cards{
+
+    .cards {
         width: 95% !important;
         margin: 30px 0px;
     }
 }
+
 .graph_cards {
     display: flex;
     justify-content: center;
@@ -477,6 +493,7 @@ table {
 .ant-progress-circle .ant-progress-text {
     top: 35% !important;
 }
+
 .btn {
     height: 30px;
     width: 100px;
@@ -536,9 +553,10 @@ table {
     width: 50% !important;
 }
 
-.margin{
+.margin {
     margin-left: 82px;
 }
+
 .graph_heading {
     margin-left: 20px;
 }
@@ -767,24 +785,6 @@ input::placeholder {
     }
 }
 
-/* @media screen and (max-width: 600px) {
-    .cards {
-        width: 100%;
-    }
-} */
-
-/* @media screen and (max-width: 503px) {
-    .div {
-        width: 320px !important;
-        margin: 30px 10px !important;
-    }
-
-    .cards {
-        width: 320px !important;
-        margin: 30px 10px !important;
-    }
-} */
-
 @media screen and (max-width: 470px) {
     .inner_card1 {
         width: 100%;
@@ -804,44 +804,7 @@ input::placeholder {
     }
 }
 
-/* @media screen and (max-width: 448px) {
-    .div {
-        width: 300px !important;
-        margin: 30px 0px !important;
-    }
-
-    .cards {
-        width: 300px !important;
-        margin: 30px 0px !important;
-        height: auto;
-    }
-
-    p {
-        margin: 0px;
-    }
-} */
-
-/* @media screen and (max-width: 406px) {
-    .div {
-        width: 98% !important;
-        margin: auto !important;
-    }
-
-    .cards {
-        width: 98% !important;
-        margin: auto !important;
-        height: auto;
-    }
-} */
-
 @media screen and (max-width: 391px) {
-
-    /* .cards,
-    .div {
-        width: 98% !important;
-        margin: 9px 0px !important;
-        height: auto;
-    } */
 
     .apexcharts-canvas .apexcharts-element-hidden {
         display: none;
@@ -854,10 +817,12 @@ input::placeholder {
         margin: 9px 0px !important;
         width: 95% !important;
     }
-    .graph_cards{
+
+    .graph_cards {
         margin: 0%;
     }
 }
+
 /* @media only screen and (max-width: 375px) {
     .margin {
        margin-left: 60px !important;
