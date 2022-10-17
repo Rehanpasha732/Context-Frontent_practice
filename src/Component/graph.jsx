@@ -20,14 +20,15 @@ const Graph = () => {
         xField: '月份',
         yField: '月均降雨量',
         yAxis:false,
+        xAxis:false,
         // seriesField: 'name',
         tooltip: false,
         lineDash: [0, 0],
         dodgePadding: 2,
         intervalPadding: 20,
-        // label: {
-        //     position: 'hide',
-           
+            label: {
+            position: 'middle',
+            }
         //     layout: [
         //         {
         //             type: 'interval-adjust-position',

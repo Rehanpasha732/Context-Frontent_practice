@@ -8,25 +8,28 @@
     --background: #12131a;
     --white: white;
     --card_side_color: #beb9b9;
+    --aqua: aqua;
 }
-body{
-    background-color:#12131a;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: var(--white) !important;
 }
+
+body {
+    background-color: #12131a;
+}
+
 .ant-upload.ant-upload-select-picture-card {
     width: auto !important;
     border: 1px solid var(--bgColor) !important;
     background-color: var(--bgColor) !important;
 }
 
-/* 
-.close_btn {
-    margin-left: 100px;
+body {
+    background-color: var(--bgColor) !important;
 }
-
-.close_btn_div {
-    width: 100px;
-    background-color: var(--backgroundcolor);
-} */
 
 .ant-upload.ant-upload-select-picture-card,
 .ant-upload {
@@ -36,10 +39,6 @@ body{
 
 .uploader {
     text-align: center;
-}
-
-body {
-    background-color: var(--bgColor) !important;
 }
 
 .img {
@@ -79,6 +78,15 @@ body {
 
 .ant-upload-text {
     margin-top: -30px;
+}
+
+.sm_btn {
+    border-radius: 2px;
+    background-color: #5494a3;
+    height: 8px;
+    width: 8px;
+    margin-right: 3px;
+    border: none;
 }
 
 .ant-upload-drag-container,
@@ -143,6 +151,7 @@ body {
 
 .side_bar {
     margin-top: -230px;
+    height: 100vh;
     background-color: var(--backgroundcolor);
 }
 
@@ -151,77 +160,19 @@ body {
 }
 
 .div_cards {
-    margin-left: 150px;
+    margin-left: 25%;
 }
-.css-hyum1k-MuiToolbar-root{
+
+.css-hyum1k-MuiToolbar-root {
     padding-left: 85px !important;
 }
-@media screen and (max-width:670px) {
 
-    .side_bar {
-        margin-top: -145px;
-    }
 
-    .ant-upload-drag-container,
-    .ant-upload-btn,
-    .ant-upload-drag {
-        width: 100% !important;
-        text-align: center !important;
-    }
-
-    .css-1pz7awu-MuiButtonBase-root-MuiIconButton-root {
-        padding: 0px !important;
-    }
-
-    .ant-upload.ant-upload-drag {
-        width: 100% !important;
-        text-align: center !important;
-    }
-
-    .drag_container {
-        display: none;
-    }
-
-    .img {
-        width: 119px;
-        margin-left: -8px;
-    }
-
-    .bar_side {
-        width: 110px;
-    }
-
-    /* .div_cards {
-        margin-left: 90px;
-    } */
-
-    .second_drag {
-        margin-top: 30px;
-        /* background-color: aqua; */
-        width: 100%;
-        /* width: 30%; */
-        display: flex;
-        justify-content: center;
-    }
-
-    .ant {
-        /* margin-left: 170px; */
-        /* padding: 4px 15px; */
-        /* background: #5494a3; */
-    }
-
-}
-.ant-upload.ant-upload-drag .ant-upload{
+.ant-upload.ant-upload-drag .ant-upload {
     padding-left: 90px;
 }
 
-
 /* Rehan work  */
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
 .abcd .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
     background-color: var(--color2) !important;
@@ -270,28 +221,20 @@ body {
 }
 
 .notification {
-
-    /* background-color: var(--color2); */
     padding-right: 10px;
     height: 30px;
     padding-bottom: 20px;
     width: 50px;
-    /* padding-bottom: 40px !important; */
-    /* margin-bottom: 10px; */
     border-radius: 20px;
-    /* padding-right: 13px; */
-
-}
-.css-ptiqhd-MuiSvgIcon-root{
-margin-bottom: 20px;
 }
 
+.css-ptiqhd-MuiSvgIcon-root {
+    margin-bottom: 20px;
+}
 
 .css-i4bv87-MuiSvgIcon-root {
     font-size: 22px !important;
 }
-
-
 
 .css-7hnt3q {
     margin-left: 150px !important;
@@ -323,9 +266,6 @@ margin-bottom: 20px;
     background-color: var(--backgroundcolor) !important;
 }
 
-* {
-    color: var(--white) !important;
-}
 
 .card_div {
     margin-top: 50px;
@@ -342,7 +282,6 @@ margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* background-color: aqua; */
     width: 100%;
 }
 
@@ -350,9 +289,7 @@ margin-bottom: 20px;
     color: var(--white);
     border: 2px solid var(--white);
     width: 20%;
-    /* margin-bottom: 3vh; */
     height: 190px;
-    /* margin: 0px 1px 30px 2px; */
     border-radius: 10px;
     padding: 15px 0px;
 }
@@ -361,9 +298,7 @@ margin-bottom: 20px;
     color: var(--white);
     border: 2px solid var(--white);
     width: 20%;
-    /* margin-bottom: 3vh; */
     height: 190px;
-    /* margin: 0px 1px 30px 2px; */
     border-radius: 10px;
     padding: 15px 0px;
 }
@@ -376,66 +311,6 @@ margin-bottom: 20px;
     padding: 15px 0px;
 }
 
-
-
-@media only screen and (max-width: 930px) {
-    .css-hyum1k-MuiToolbar-root {
-        width: 97%;
-
-    }
-}
-@media only screen and (max-width: 1050px) {
-    .heading{
-        margin-left: 15% !important;
-    }
-    .card_container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .inner_card1 {
-        width: 46% !important;
-    }
-
-    .inner_card2 {
-        width: 46% !important;
-    }
-
-    .inner_card3 {
-        width: 46% !important;
-        margin-top: 50px !important;
-    }
-
-    .Apex_chart_div {
-        width: 46% !important;
-        margin-top: 50px !important;
-    }
-}
-@media only screen and (max-width: 630px) {
-    .heading{
-        margin-left: 15% !important;
-    }
-    .card_container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .inner_card1{
-        width: 80% !important;
-        display: block !important;
-    }
-    .inner_card2{
-        width: 80% !important;
-        margin-top: 50px !important;
-    }
-    .inner_card3{
-        width: 80%  !important;
-        margin-top: 50px !important;
-    }.Apex_chart_div{
-        width: 80% !important;
-        margin-top: 50px !important;
-    }
-}
-
 .graph_cards {
     display: flex;
     flex-wrap: wrap;
@@ -445,7 +320,6 @@ margin-bottom: 20px;
 
 .div {
     margin: 30px 20px;
-    /* margin: 10px 5px; */
     padding: 20px;
     width: 357px !important;
     height: 250px;
@@ -455,67 +329,32 @@ margin-bottom: 20px;
 
 .cards {
     margin: 30px 20px;
-    /* margin: 10px 5px; */
     width: 357px !important;
     height: 250px;
     border: 2px solid var(--white);
     border-radius: 10px;
     color: var(--white);
 }
-@media screen and (max-width: 503px) {
-    .div{
-        width: 320px !important;
-        margin: 30px 10px !important;
-    }.cards{
-        width: 320px !important;
-        margin: 30px 10px !important;
-    }
-  }
-  @media screen and (max-width: 448px) {
-    .div{
-        width: 300px !important;
-        margin: 30px 0px !important;
-    }.cards{
-        width: 300px !important;
-        margin: 30px 0px !important;
-        height: auto;
-    }
-  }
-  @media screen and (max-width: 406px) {
-    .div{
-        width: 98% !important;
-        margin: auto !important;
-    }.cards{
-        width: 98% !important;
-        margin: auto !important;
-        height: auto;
-    }
-  }
-  @media screen and (max-width: 391px) {
-    .div{
-        width: 98% !important;
-        margin: 0 !important;
-    }.cards{
-        width: 98% !important;
-        margin: 0 !important;
-        height: auto;
-    }
-  }
+
 .graph_cards {
     display: flex;
     justify-content: center;
 }
-.MuiTypography-root, .MuiTypography-h6, .MuiTypography-noWrap, .css-1futezt-MuiTypography-root{
+
+.MuiTypography-root,
+.MuiTypography-h6,
+.MuiTypography-noWrap,
+.css-1futezt-MuiTypography-root {
     margin-left: 30px !important;
 }
+
 .inner_graph_container {
     display: flex;
-    /* flex-wrap: wrap; */
     width: 100%;
-    /* margin-top: 15px; */
     justify-content: space-around;
 }
-.activity_div{
+
+.activity_div {
     width: 50%;
 }
 
@@ -537,8 +376,9 @@ margin-bottom: 20px;
     width: 50%;
     margin-left: 10px;
 }
+
 .sky_blue {
-    background-color: aqua;
+    background-color: var(--aqua);
     height: 20px;
     width: 20%;
     border: none;
@@ -560,11 +400,7 @@ margin-bottom: 20px;
     border: none;
     margin: 0px 2px;
 }
-@media screen and (max-width: 600px) {
-    .cards {
-        width: 100%;
-    }
-}
+
 
 table {
     margin: 0px auto;
@@ -581,58 +417,12 @@ table {
     top: 35% !important;
 }
 
-
 .tr {
     color: blue;
 }
 
 td {
     padding: 5px 20px;
-}
-
-@media screen and (max-width: 470px) {
-    /* td {
-        padding: 5px 12px;
-    }
-
-    table {
-        margin: 0px 0px;
-    } */
-
-    /* .div {
-        margin: 20px -25px;
-        padding: 14px;
-        width: 258px;
-        height: 268px;
-        border: 2px solid var(--white);
-        border-radius: 10px;
-    }
-
-    .cards {
-        margin: 20px -25px;
-        height: 322px;
-        border: 2px solid var(--white);
-        border-radius: 10px;
-        color: var(--white);
-        width: 255px;
-    } */
-
-    .inner_card1 {
-        width: 100%;
-    }
-
-    .inner_card2 {
-        width: 100%;
-    }
-
-    .inner_card3 {
-        width: 100%;
-    }
-
-    .chart {
-        background-color: aqua;
-
-    }
 }
 
 .btn {
@@ -643,6 +433,22 @@ td {
     font-size: 10px;
     background-color: rgb(53, 51, 51);
     border-radius: 5px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light,
+.apexcharts-tooltip-title,
+.apexcharts-xaxistooltip,
+.apexcharts-xaxistooltip-text {
+    border: 2px solid var(--card_side_color) !important;
+    background-color: var(--color2) !important;
+}
+
+.apexcharts-menu-open {
+    background-color: var(--color2) !important;
+}
+
+.apexcharts-menu {
+    border-radius: 7px;
 }
 
 .heading {
@@ -672,7 +478,6 @@ td {
 
 .graph_div {
     height: 150px;
-    /* margin: 20px 0px 0px 10px; */
 }
 
 .ant-progress-text {
@@ -741,20 +546,12 @@ input::placeholder {
     border-radius: 10px;
 }
 
-/* @media only screen and (max-width: 1094px) {
-    .Apex_chart_div {
-        margin-top: 50px;
-    }
-} */
-
 .chart_graph {
     width: 50%;
     height: 186px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     background-color: var(--card_side_color);
-
-
 }
 
 #chart {
@@ -764,8 +561,6 @@ input::placeholder {
 
 .chart_graph_text {
     padding: 5px;
-
-
 }
 
 .weeks_data {
@@ -789,7 +584,6 @@ input::placeholder {
     font-weight: bolder;
 }
 
-
 .Show_chart_form {
     color: rgb(73, 64, 64) !important;
     font-size: 8px;
@@ -801,4 +595,210 @@ input::placeholder {
 .button_div {
     display: flex;
     margin-top: -15px;
+}
+
+.ant-upload-list-picture-card-container {
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1050px) {
+    .heading {
+        margin-left: 15% !important;
+    }
+
+    .card_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inner_card1 {
+        width: 46% !important;
+    }
+
+    .inner_card2 {
+        width: 46% !important;
+    }
+
+    .inner_card3 {
+        width: 46% !important;
+        margin-top: 50px !important;
+    }
+
+    .Apex_chart_div {
+        width: 46% !important;
+        margin-top: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .css-hyum1k-MuiToolbar-root {
+        width: 97%;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .side_bar {
+        margin-top: -160px;
+        position: fixed;
+    }
+
+    .ant-upload-drag-container,
+    .ant-upload-btn,
+    .ant-upload-drag {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .css-1pz7awu-MuiButtonBase-root-MuiIconButton-root {
+        padding: 0px !important;
+    }
+
+    .ant-upload.ant-upload-drag {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .drag_container {
+        display: none;
+    }
+
+    .img {
+        width: 110px;
+        margin-left: -8px;
+    }
+
+    .bar_side {
+        width: 110px;
+    }
+
+    .second_drag {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .heading {
+        margin-left: 15% !important;
+    }
+
+    .card_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inner_card1 {
+        width: 80% !important;
+        display: block !important;
+    }
+
+    .inner_card2 {
+        width: 80% !important;
+        margin-top: 50px !important;
+    }
+
+    .inner_card3 {
+        width: 80% !important;
+        margin-top: 50px !important;
+    }
+
+    .Apex_chart_div {
+        width: 80% !important;
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 503px) {
+    .div {
+        width: 320px !important;
+        margin: 30px 10px !important;
+    }
+
+    .cards {
+        width: 320px !important;
+        margin: 30px 10px !important;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .inner_card1 {
+        width: 100%;
+    }
+
+    .inner_card2 {
+        width: 100%;
+    }
+
+    .inner_card3 {
+        width: 100%;
+    }
+
+    .chart {
+        background-color: var(--aqua);
+
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .div {
+        width: 300px !important;
+        margin: 30px 0px !important;
+    }
+
+    .cards {
+        width: 300px !important;
+        margin: 30px 0px !important;
+        height: auto;
+    }
+
+    p {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .div {
+        width: 98% !important;
+        margin: auto !important;
+    }
+
+    .cards {
+        width: 98% !important;
+        margin: auto !important;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 391px) {
+
+    .cards,
+    .div {
+        width: 98% !important;
+        margin: 9px 0px !important;
+        height: auto;
+    }
+
+    .apexcharts-canvas .apexcharts-element-hidden {
+        display: none;
+    }
+
+    .inner_card1,
+    .inner_card2,
+    .inner_card3,
+    .Apex_chart_div {
+        margin: 9px 0px !important;
+    }
+    .graph_cards{
+        margin: 0%;
+    }
 }
