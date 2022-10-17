@@ -15,10 +15,10 @@ const Cards = () => {
                                 <ProgressBar />
                             </div>
                             <div>
-                                <button className="btn"> <button style={{backgroundColor:'#5494a3',height:'10px',width:'10px',border:'2px solid #5494a3'}}></button> UPLOAD FILES</button>
+                                <button className="btn"> <button class = "sm_btn"></button> UPLOAD FILES</button>
                                 <br />
                                 <br />
-                                <button className="btn"><button style={{backgroundColor:'silver',height:'10px',width:'10px',border:'2px solid silver'}}></button> TOTAL FILES</button>
+                                <button className="btn"><button class = "sm_btn" style={{backgroundColor:'white'}}></button> TOTAL FILES</button>
                                 <div className="percentage_div">
                                     <h4 className="percentage">77.8%</h4>
                                     <span style={{ fontSize: '24px' }} className="fa">&#xf0d8;</span>
@@ -35,10 +35,10 @@ const Cards = () => {
                                 <ProgressBar />
                             </div>
                             <div>
-                                <button className="btn"><button style={{backgroundColor:'#5494a3',height:'10px',width:'10px',border:'2px solid #5494a3'}}></button> INSIGHTS</button>
+                                <button className="btn"><button class = "sm_btn"></button> INSIGHTS</button>
                                 <br />
                                 <br />
-                                <button className="btn"><button style={{backgroundColor:'silver',height:'10px',width:'10px',border:'2px solid silver'}}></button>ARTIFACTS</button>
+                                <button className="btn"><button class = "sm_btn" style={{backgroundColor:'white'}}></button>ARTIFACTS</button>
                                 <div className="percentage_div">
                                     <h4 className="percentage">77.8%</h4>
                                     <span style={{ fontSize: '24px' }} className="fa">&#xf0d8;</span>
@@ -55,10 +55,10 @@ const Cards = () => {
                                 <ProgressBar />
                             </div>
                             <div>
-                                <button className="btn"><button style={{backgroundColor:'#5494a3',height:'10px',width:'10px',border:'2px solid #5494a3'}}></button> TIME SAVED</button>
+                                <button className="btn"><button class = "sm_btn"></button> TIME SAVED</button>
                                 <br />
                                 <br />
-                                <button className="btn"><button style={{backgroundColor:'silver',height:'10px',width:'10px',border:'2px solid silver'}}></button>TIME</button>
+                                <button className="btn"><button class = "sm_btn" style={{backgroundColor:'white'}}></button>TIME</button>
                                 <div className="percentage_div">
                                     <h4 className="percentage">77.8%</h4>
                                     <span style={{ fontSize: '24px' }} className="fa">&#xf0d8;</span>

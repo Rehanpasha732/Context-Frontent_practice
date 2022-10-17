@@ -78,7 +78,14 @@ body {
 .ant-upload-text {
     margin-top: -30px;
 }
-
+.sm_btn{
+    border-radius: 2px;
+    background-color:#5494a3;
+    height:8px;
+    width:8px;
+    margin-right: 3px;
+    border: none;
+}
 .ant-upload-drag-container,
 .ant-upload-btn,
 .ant-upload-drag {
