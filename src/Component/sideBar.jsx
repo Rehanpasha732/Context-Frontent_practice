@@ -14,6 +14,14 @@ import {
     ApartmentOutlined,
     FileDoneOutlined
 } from '@ant-design/icons'
+
+import { BsStackOverflow } from 'react-icons/bs';
+import { FaProjectDiagram } from 'react-icons/fa';
+import { GiDatabase } from 'react-icons/gi';
+
+
+
+
 import AcUnitOutlinedIcon from '@mui/icons-material/AcUnitOutlined';
 import AutoAwesomeMotionOutlinedIcon from '@mui/icons-material/AutoAwesomeMotionOutlined';
 import { Button, Menu } from 'antd';
@@ -36,10 +44,10 @@ const items = [
     getItem('Dashboard', '1', <AppstoreOutlined />),
     getItem('Home', '2', <HomeOutlined />),
     getItem('Analytics', '4', <ChromeOutlined />),
-    getItem('Data', '5', <DatabaseOutlined />),
-    getItem('Flow Designer', '6', <AutoAwesomeMotionOutlinedIcon />),
+    getItem('Data', '5', <GiDatabase />),
+    getItem('Flow Designer', '6', <BsStackOverflow />),
     getItem('Graph', '7', <LineChartOutlined />),
-    getItem('Project Alerts', '8', <DeploymentUnitOutlined />),
+    getItem('Project Alerts', '8', <FaProjectDiagram />),
     getItem('Project Activities', '9', <AcUnitOutlinedIcon />),
     getItem('Project Workflow', '10', <ApartmentOutlined />),
     getItem('Web Archivees', '11', <FileDoneOutlined />),

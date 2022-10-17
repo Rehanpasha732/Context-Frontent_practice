@@ -28,22 +28,22 @@ const Graph = () => {
         intervalPadding: 20,
             label: {
             position: 'middle',
-           
-            layout: [
-                {
-                    type: 'interval-adjust-position',
-                    tickLine:null,
-                },
-                {
-                    type: 'interval-hide-overlap',
-                    tickLine:null
-                },
-                {
-                    type: 'adjust-color',
-                    tickLine:null
-                },
-            ],
-        },
+            }
+        //     layout: [
+        //         {
+        //             type: 'interval-adjust-position',
+        //             tickLine:null,
+        //         },
+        //         {
+        //             type: 'interval-hide-overlap',
+        //             tickLine:null
+        //         },
+        //         {
+        //             type: 'adjust-color',
+        //             tickLine:null
+        //         },
+        //     ],
+        // },
     }
 
     return <Column {...config} />;
