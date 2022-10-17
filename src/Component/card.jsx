@@ -58,7 +58,7 @@ const Cards = () => {
                                 <button className="btn"><button class = "sm_btn"></button> TIME SAVED</button>
                                 <br />
                                 <br />
-                                <button className="btn"><button class = "sm_btn" style={{backgroundColor:'white'}}></button>TIME</button>
+                                <button className="btn"><button class = "sm_btn_time" style={{backgroundColor:'white'}}></button>TIME</button>
                                 <div className="percentage_div">
                                     <h4 className="percentage">77.8%</h4>
                                     <span style={{ fontSize: '24px' }} className="fa">&#xf0d8;</span>
@@ -77,7 +77,7 @@ const Cards = () => {
                         <div><h2 className='recent'>Recent Files</h2></div>
                         <div className="input_div"><input placeholder='Search...' type="text" /></div>
                     </div>
-                    <table>
+                    <table className="table">
                         <thead>
                             <tr className='tr'>
                                 <th>File Name</th>
@@ -114,7 +114,7 @@ const Cards = () => {
                         <div><h2 className='recent'>Recent Files</h2></div>
                         <div className="input_div"><input placeholder='Search...' type="text" /></div>
                     </div>
-                    <table>
+                    <table className="table">
                         <thead>
                             <tr className='tr'>
                                 <th>File Name</th>

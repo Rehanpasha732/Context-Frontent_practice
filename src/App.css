@@ -85,10 +85,17 @@ body {
     background-color: #5494a3;
     height: 8px;
     width: 8px;
-    margin-right: 3px;
+    margin-right: 10px;
     border: none;
 }
-
+.sm_btn_time{
+    border-radius: 2px;
+    background-color: #5494a3;
+    height: 8px;
+    width: 8px;
+    margin-right: 40px;
+    border: none;
+}
 .ant-upload-drag-container,
 .ant-upload-btn,
 .ant-upload-drag {
@@ -220,14 +227,25 @@ body {
     background-color: var(--color2);
 }
 
+
+
 .notification {
     padding-right: 10px;
     height: 30px;
     padding-bottom: 20px;
     width: 50px;
     border-radius: 20px;
+    background-color: #5494a3;
+}
+.notification_icon{
+    /* background-color: aqua; */
+    margin-top: 5px;
 }
 
+.css-fvc8ir-MuiBadge-badge{
+    margin-top: 11px;
+    margin-right: -4px;
+}
 .css-ptiqhd-MuiSvgIcon-root {
     margin-bottom: 20px;
 }
@@ -347,7 +365,7 @@ td {
 
 .graph_cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .MuiTypography-root,
@@ -411,11 +429,12 @@ td {
 }
 
 
-table {
+.table {
     margin: 0px auto;
     text-align: center;
     font-size: 15px;
     color: grey;
+    width: 95%;
 }
 
 .ant-progress-inner {
@@ -806,6 +825,7 @@ input::placeholder {
 
 @media screen and (max-width: 391px) {
 
+   
     .apexcharts-canvas .apexcharts-element-hidden {
         display: none;
     }
