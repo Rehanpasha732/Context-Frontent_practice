@@ -20,32 +20,31 @@ const Graph = () => {
         xField: '月份',
         yField: '月均降雨量',
         yAxis:false,
-        xAxis:false,
+        xAxis:true,
         // seriesField: 'name',
-        tooltip: false,
+        tooltip: true,
         lineDash: [0, 0],
         dodgePadding: 2,
         intervalPadding: 20,
             label: {
             position: 'middle',
-            }
-        //     layout: [
-        //         {
-        //             type: 'interval-adjust-position',
-        //             tickLine:null,
-        //         },
-        //         {
-        //             type: 'interval-hide-overlap',
-        //             tickLine:null
-        //         },
-        //         {
-        //             type: 'adjust-color',
-        //             tickLine:null
-        //         },
-        //     ],
-        // },
-    }
-
+            },
+             layout: [
+                
+                 {
+                    type: 'interval-adjust-position',
+                     tickLine:null,
+                 },
+                 {
+                     type: 'interval-hide-overlap',
+                     tickLine:null
+                 },
+                 {
+                     type: 'adjust-color',
+                     tickLine:null
+                 },
+             ],
+         };
     return <Column {...config} />;
 };
 

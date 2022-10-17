@@ -187,10 +187,9 @@ export default function Navbar() {
             </Search>
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <IconButton size="medium" style={{ marginTop: '30px' }} aria-label="show 4 new mails" color="inherit">
+              <IconButton size="medium"  aria-label="show 4 new mails" color="inherit">
                 <Badge color="error">
-                  <p>< TbGridDots /></p>
-                  {/* <DialpadIcon /> */}
+                < TbGridDots />
                 </Badge>
               </IconButton>
               <IconButton
@@ -201,9 +200,7 @@ export default function Navbar() {
                 <div className="notification">
                   <Badge badgeContent={15} fontSize='5yarn add react-iconspx'> <NotificationsIcon fontSize='small' />
                   </Badge>
-
                 </div>
-
               </IconButton>
               <IconButton
                 size="large"
