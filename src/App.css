@@ -88,7 +88,8 @@ body {
     margin-right: 10px;
     border: none;
 }
-.sm_btn_time{
+
+.sm_btn_time {
     border-radius: 2px;
     background-color: #5494a3;
     height: 8px;
@@ -96,6 +97,7 @@ body {
     margin-right: 40px;
     border: none;
 }
+
 .ant-upload-drag-container,
 .ant-upload-btn,
 .ant-upload-drag {
@@ -237,15 +239,17 @@ body {
     border-radius: 20px;
     background-color: #5494a3;
 }
-.notification_icon{
+
+.notification_icon {
     /* background-color: aqua; */
     margin-top: 5px;
 }
 
-.css-fvc8ir-MuiBadge-badge{
+.css-fvc8ir-MuiBadge-badge {
     margin-top: 11px;
     margin-right: -4px;
 }
+
 .css-ptiqhd-MuiSvgIcon-root {
     margin-bottom: 20px;
 }
@@ -361,6 +365,74 @@ td {
     border-radius: 10px;
     color: var(--white);
     padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1115px) {
+    .div {
+        width: 50% !important;
+    }
+
+    .cards {
+        width: 45% !important;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .div {
+        width: 60% !important;
+    }
+
+    .cards {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .div {
+        width: 80% !important;
+    }
+
+    .cards {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .div {
+        width: 85% !important;
+    }
+
+    .cards {
+        width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .div {
+        width: 90% !important;
+        margin: 30px 10px;
+    }
+
+    .cards {
+        width: 90% !important;
+        margin: 30px 10px;
+    }
+
+    td {
+        padding: 3px 15px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .div {
+        width: 95% !important;
+        margin: 30px 0px;
+    }
+
+    .cards {
+        width: 95% !important;
+        margin: 30px 0px;
+    }
 }
 
 .graph_cards {
@@ -824,10 +896,16 @@ input::placeholder {
 }
 
 @media screen and (max-width: 391px) {
+    .div_cards {
+        margin-left: 70px;
+    }
 
-   
     .apexcharts-canvas .apexcharts-element-hidden {
         display: none;
+    }
+
+    .css-6hp17o-MuiList-root-MuiMenu-list {
+        color: #12131a !important;
     }
 
     .inner_card1,
@@ -840,5 +918,19 @@ input::placeholder {
 
     .graph_cards {
         margin: 0%;
+    }
+
+    .spans_div {
+        display: none;
+    }
+
+    td {
+        padding: 3px 4px !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .css-hyum1k-MuiToolbar-root {
+        width: auto !important;
     }
 }
