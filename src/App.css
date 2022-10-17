@@ -773,12 +773,6 @@ input::placeholder {
     }
 } */
 
-/* @media screen and (max-width: 503px) {
-    .div {
-        width: 320px !important;
-        margin: 30px 10px !important;
-    }
-} */
 
 @media screen and (max-width: 470px) {
     .inner_card1 {
