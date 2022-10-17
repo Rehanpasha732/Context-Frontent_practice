@@ -220,14 +220,32 @@ body {
     background-color: var(--color2);
 }
 
+/* .notification {
+    padding-right: 10px;
+    height: 30px;
+    padding-bottom: 20px;
+    width: 50px;
+    border-radius: 20px;
+} */
+
+
 .notification {
     padding-right: 10px;
     height: 30px;
     padding-bottom: 20px;
     width: 50px;
     border-radius: 20px;
+    background-color: #5494a3;
+}
+.notification_icon{
+    /* background-color: aqua; */
+    margin-top: 5px;
 }
 
+.css-fvc8ir-MuiBadge-badge{
+    margin-top: 11px;
+    margin-right: -4px;
+}
 .css-ptiqhd-MuiSvgIcon-root {
     margin-bottom: 20px;
 }

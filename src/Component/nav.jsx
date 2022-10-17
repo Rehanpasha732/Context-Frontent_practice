@@ -27,7 +27,7 @@ const Search = styled('div')(({ theme }) => ({
     backgroundColor: '#12131a',
   },
   marginRight: theme.spacing(12),
-  marginLeft: '10%',
+  marginLeft: '20%',
   width: 'auto',
   [theme.breakpoints.up('lr')]: {
     marginLeft: theme.spacing(100),
@@ -59,6 +59,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
+
+const current = new Date();
+const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
 
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -171,7 +174,7 @@ export default function Navbar() {
               sx={{ display: { xs: 'none', sm: 'block' } }}
             >
               <span className='name'>Hi John </span>   <br />
-              <span className='paragraph' >28 sep 2022</span>
+              <span className='paragraph' >{date}</span>
             </Typography>
             <Search>
               <SearchIconWrapper>
@@ -198,7 +201,7 @@ export default function Navbar() {
                 <div className="notification">
                   <Badge badgeContent={15} fontSize='5yarn add react-iconspx'> <NotificationsIcon fontSize='small' />
                   </Badge>
-                 
+
                 </div>
 
               </IconButton>
