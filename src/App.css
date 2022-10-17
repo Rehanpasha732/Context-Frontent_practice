@@ -778,11 +778,6 @@ input::placeholder {
         width: 320px !important;
         margin: 30px 10px !important;
     }
-
-    .cards {
-        width: 320px !important;
-        margin: 30px 10px !important;
-    }
 } */
 
 @media screen and (max-width: 470px) {
