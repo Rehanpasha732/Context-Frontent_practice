@@ -5,7 +5,7 @@ import ApexChart from "./area.jsx";
 import BasicModal from './modal'
 
 const Cards = () => {
-    const [inp,setInp] = useState()
+    const [inp, setInp] = useState()
     let a = document.getElementById("1")
     let b = document.getElementById("2")
     let c = document.getElementById("3")
@@ -15,32 +15,42 @@ const Cards = () => {
     let tr_3 = document.getElementById("tr_3")
     let tr_4 = document.getElementById("tr_4")
     window.onkeydown = function (event) {
-        let z = a.innerHTML
-        if(event.keyCode === 13 && z === inp){
+        if (a.innerHTML === inp && event.keyCode === 13) {
+            console.log(a.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "block"
             tr_2.style.display = "none"
             tr_3.style.display = "none"
             tr_4.style.display = "none"
-        console.log(z)
-    }else if (b.innerHTML === inp){
-        tr_1.style.display = "none"
-        tr_3.style.display = "none"
-        tr_4.style.display = "none"
-    }else if (c.innerHTML === inp){
-        tr_1.style.display = "none"
-        tr_2.style.display = "none"
-        tr_4.style.display = "none"
-    }else if (d.innerHTML === inp){
-        tr_1.style.display = "none"
-        tr_2.style.display = "none"
-        tr_3.style.display = "none"
+        } else if (b.innerHTML === inp) {
+            console.log(b.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "none"
+            tr_2.style.display = "block"
+            tr_3.style.display = "none"
+            tr_4.style.display = "none"
+        } else if (c.innerHTML === inp) {
+            console.log(c.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "none"
+            tr_2.style.display = "none"
+            tr_3.style.display = "block"
+            tr_4.style.display = "none"
+        } else if (d.innerHTML === inp) {
+            console.log(d.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "none"
+            tr_2.style.display = "none"
+            tr_3.style.display = "none"
+            tr_4.style.display = "block"
+        }
     }
-}
-// alert("jabba")
-// console.log(inp)
-// console.log(a.innerHTML)
-// console.log(b.innerHTML)
-// console.log(c.innerHTML)
-// console.log(d.innerHTML)
+    // alert("jabba")
+    // console.log(inp)
+    // console.log(a.innerHTML)
+    // console.log(b.innerHTML)
+    // console.log(c.innerHTML)
+    // console.log(d.innerHTML)
     // console.log(a.innerText)
     // const Search = () => {
     //     console.log(getInput.value)
@@ -116,35 +126,35 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text" value={inp}  onChange={(e)=>{setInp(e.target.value)}}/></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" value={inp} onChange={(e) => { setInp(e.target.value) }} /></div>
                     </div>
 
                     <table className="table">
                         <thead>
-                            <tr className='tr'>
+                            <tr id='tr'>
                                 <th>File Name</th>
                                 <th>Project</th>
                                 <th>Time</th>
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                            <tr id = "tr_1">
-                                <td className='row_2' id = "1">Additional</td>
+                            <tr id="tr_1">
+                                <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id = "tr_2">
-                                <td className='row_2' id = "2">File_new</td>
+                            <tr id="tr_2">
+                                <td className='row_2' id="2">File_new</td>
                                 <td className='row_2'>new_123</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id = "tr_3">
-                                <td className='row_2' id = "3">NewData</td>
+                            <tr id="tr_3">
+                                <td className='row_2' id="3">NewData</td>
                                 <td className='row_2'>Additional</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id = "tr_4">
-                                <td className='row_2' id = "4">001_new</td>
+                            <tr id="tr_4">
+                                <td className='row_2' id="4">001_new</td>
                                 <td className='row_2'>figa</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
@@ -154,7 +164,7 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text"/></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" /></div>
                     </div>
                     <table className="table">
                         <thead>
@@ -165,23 +175,23 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                            <tr id = "tr_1">
-                                <td className='row_2' id = "1">Additional</td>
+                            <tr id="tr_1">
+                                <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id = "tr_2">
-                                <td className='row_2' id = "2">File_new</td>
+                            <tr id="tr_2">
+                                <td className='row_2' id="2">File_new</td>
                                 <td className='row_2'>new_123</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id = "tr_3">
-                                <td className='row_2' id = "3">NewData</td>
+                            <tr id="tr_3">
+                                <td className='row_2' id="3">NewData</td>
                                 <td className='row_2'>Additional</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id = "tr_4">
-                                <td className='row_2' id = "4">001_new</td>
+                            <tr id="tr_4">
+                                <td className='row_2' id="4">001_new</td>
                                 <td className='row_2'>figa</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
