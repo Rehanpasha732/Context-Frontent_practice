@@ -23,6 +23,7 @@ const Cards = () => {
     let tr_6 = document.getElementById("tr_6")
     let tr_7 = document.getElementById("tr_7")
     let tr_8 = document.getElementById("tr_8")
+    let no_data = document.getElementById("no_data")
     window.onkeydown = function (event) {
         if (a.innerHTML === inp && event.keyCode === 13) {
             tr_1.style.display = ""
@@ -52,26 +53,31 @@ const Cards = () => {
             tr_6.style.display = "none"
             tr_7.style.display = "none"
             tr_8.style.display = "none"
+            no_data.innerHTML = ""
         } else if (inp1 === "F") {
             tr_5.style.display = "none"
             tr_6.style.display = ""
             tr_7.style.display = "none"
             tr_8.style.display = "none"
+            no_data.innerHTML = ""
         } else if (inp1 === "N") {
             tr_5.style.display = "none"
             tr_6.style.display = "none"
             tr_7.style.display = ""
             tr_8.style.display = "none"
+            no_data.innerHTML = ""
         } else if (inp1 === "0") {
             tr_5.style.display = "none"
             tr_6.style.display = "none"
             tr_7.style.display = "none"
             tr_8.style.display = ""
-        }else if (inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0"){
+            no_data.innerHTML = ""
+        } else if (inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0") {
             tr_5.style.display = "none"
             tr_6.style.display = "none"
             tr_7.style.display = "none"
             tr_8.style.display = "none"
+            no_data.innerHTML = "No Data Found"
         }
     }
     return (
@@ -156,7 +162,6 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                                <p id="no"></p>
                             <tr id="tr_1">
                                 <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
@@ -179,8 +184,8 @@ const Cards = () => {
                             </tr>
                         </tbody>
                         <div className="view_all_btn">
-                                <button className="button" ><BasicModal /></button>
-                            </div>
+                            <button className="button" ><BasicModal /></button>
+                        </div>
                     </table>
                 </div>
                 <div className="cards">
@@ -197,6 +202,7 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
+                            <p id="no_data"></p>
                             <tr id="tr_5">
                                 <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
