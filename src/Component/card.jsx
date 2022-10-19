@@ -4,8 +4,8 @@ import ProgressBar from "./progressBar";
 import ApexChart from "./area.jsx";
 
 const Cards = () => {
-    const [inp, setInp] = useState()
-    const [inp1, setInp1] = useState()
+    const [inp, setInp] = useState([])
+    const [inp1, setInp1] = useState([])
     let a = document.getElementById("1")
     let b = document.getElementById("2")
     let c = document.getElementById("3")
@@ -23,7 +23,7 @@ const Cards = () => {
     let tr_7 = document.getElementById("tr_7")
     let tr_8 = document.getElementById("tr_8")
     window.onkeydown = function (event) {
-        if (a.innerHTML === inp && event.keyCode === 13) {
+        if (a === inp && event.keyCode !== 13 ) {
             tr_1.style.display = ""
             tr_2.style.display = "none"
             tr_3.style.display = "none"
@@ -46,7 +46,7 @@ const Cards = () => {
         }
     }
     window.onkeyup = function (event) {
-        if (e.innerHTML === inp1) {
+        if (e.innerHTML === inp1 && event.keyCode === 13) {
             tr_5.style.display = ""
             tr_6.style.display = "none"
             tr_7.style.display = "none"
@@ -139,7 +139,7 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text" value={inp} onChange={(e) => { setInp(e.target.value) }} /></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" value={inp} onChange={(e) => {setInp(e.target.value) }} /></div>
                     </div>
                     <table className="table">
                         <thead>
