@@ -14,7 +14,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+    /* color: var(--white) !important; */
 }
 
 body {
@@ -519,7 +519,6 @@ td {
     color: grey;
     width: 95%;
 }
-
 .ant-progress-inner {
     width: 85px !important;
 }
@@ -556,6 +555,7 @@ td {
 
 .heading {
     margin-left: 20px;
+    color: var(--white);
 }
 
 .percentage_div {
@@ -567,7 +567,9 @@ td {
     margin-left: 5px !important;
     color: var(--color2) !important;
 }
-
+.ant-progress-circle .ant-progress-text{
+    color: white !important;
+}
 .percentage {
     color: var(--color2) !important;
     font-size: 15px;
@@ -613,12 +615,32 @@ th {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    color: var(--white) !important;
+
+}
+.recent{
+    color: var(--white) !important;
 }
 
 .input_div {
     margin-top: 5px;
 }
 
+.view_all_btn_div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -10px;
+    width: 90%;
+}
+.view_all_btn{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    color: var(--white);
+}
+.view_all_btn:hover{
+    cursor: pointer;
+}
 tbody {
     border-top: 2px solid var(--color2) !important;
 }
