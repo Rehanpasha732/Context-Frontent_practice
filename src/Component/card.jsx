@@ -193,8 +193,10 @@ const Cards = () => {
                                 <th>File Name</th>
                                 <th>Project</th>
                                 <th>Time</th>
-                            </tr>
+                            </tr> 
+                            <p></p>
                         </thead>
+                       
                         <tbody id="tbody">
                             <tr id="tr_5">
                                 <td className='row_2' id="5">Additional</td>
