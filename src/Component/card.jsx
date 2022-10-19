@@ -78,6 +78,13 @@ const Cards = () => {
             tr_7.style.display = "none"
             tr_8.style.display = "none"
             no_data.innerHTML = "No Data Found"
+        }else if (inp1 === "") {
+            alert("jbaba")
+            tr_5.style.display = ""
+            tr_6.style.display = ""
+            tr_7.style.display = ""
+            tr_8.style.display = ""
+            no_data.style.display = "none"
         }
     }
     return (
