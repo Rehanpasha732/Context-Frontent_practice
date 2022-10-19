@@ -353,14 +353,14 @@ body {
 
 .tr {
     color: blue;
-    display: block;
+    /* display: block; */
 }
 /* .th {
     margin: 0px 20px !important;
 } */
-#tr_1,#tr_2,#tr_3,#tr_4{
+/* #tr_1,#tr_2,#tr_3,#tr_4{
     display: block;
-}
+} */
 td {
     padding: 5px 20px;
 }
