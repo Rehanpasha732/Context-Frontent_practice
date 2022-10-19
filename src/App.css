@@ -115,7 +115,6 @@ body {
 .ant-btn-primary:focus {
     background-color: var(--backgroundcolor);
     border: 1px solid var(--backgroundcolor);
-
 }
 
 .ant-btn-primary {
@@ -169,13 +168,12 @@ body {
 }
 
 .div_cards {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .css-hyum1k-MuiToolbar-root {
     padding-left: 85px !important;
 }
-
 
 .ant-upload.ant-upload-drag .ant-upload {
     padding-left: 90px;
@@ -229,8 +227,6 @@ body {
     background-color: var(--color2);
 }
 
-
-
 .notification {
     padding-right: 10px;
     height: 30px;
@@ -241,7 +237,6 @@ body {
 }
 
 .notification_icon {
-    /* background-color: aqua; */
     margin-top: 5px;
 }
 
@@ -277,7 +272,7 @@ body {
     position: fixed;
 }
 
-/*Umair Work*/
+/* Umair Work */
 
 :root {
     --background-color: #12131a;
@@ -287,7 +282,6 @@ body {
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
     background-color: var(--backgroundcolor) !important;
 }
-
 
 .card_div {
     margin-top: 50px;
@@ -367,74 +361,6 @@ td {
     padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 1115px) {
-    .div {
-        width: 50% !important;
-    }
-
-    .cards {
-        width: 45% !important;
-    }
-}
-
-@media only screen and (max-width: 998px) {
-    .div {
-        width: 60% !important;
-    }
-
-    .cards {
-        width: 60% !important;
-    }
-}
-
-@media only screen and (max-width: 630px) {
-    .div {
-        width: 80% !important;
-    }
-
-    .cards {
-        width: 80% !important;
-    }
-}
-
-@media only screen and (max-width: 498px) {
-    .div {
-        width: 85% !important;
-    }
-
-    .cards {
-        width: 85% !important;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .div {
-        width: 90% !important;
-        margin: 30px 10px;
-    }
-
-    .cards {
-        width: 90% !important;
-        margin: 30px 10px;
-    }
-
-    td {
-        padding: 3px 15px;
-    }
-}
-
-@media only screen and (max-width: 410px) {
-    .div {
-        width: 95% !important;
-        margin: 30px 0px;
-    }
-
-    .cards {
-        width: 95% !important;
-        margin: 30px 0px;
-    }
-}
-
 .graph_cards {
     display: flex;
     justify-content: space-around;
@@ -499,7 +425,6 @@ td {
     border: none;
     margin: 0px 2px;
 }
-
 
 .table {
     margin: 0px auto;
@@ -709,64 +634,6 @@ input::placeholder {
     }
 }
 
-@media only screen and (max-width: 998px) {
-    .div {
-        width: 60% !important;
-    }
-
-    .cards {
-        width: 60% !important;
-    }
-}
-
-@media only screen and (max-width: 630px) {
-    .div {
-        width: 80% !important;
-    }
-
-    .cards {
-        width: 80% !important;
-    }
-}
-
-@media only screen and (max-width: 498px) {
-    .div {
-        width: 85% !important;
-    }
-
-    .cards {
-        width: 85% !important;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .div {
-        width: 90% !important;
-        margin: 30px 10px;
-    }
-
-    .cards {
-        width: 90% !important;
-        margin: 30px 10px;
-    }
-
-    td {
-        padding: 3px 15px;
-    }
-}
-
-@media only screen and (max-width: 410px) {
-    .div {
-        width: 95% !important;
-        margin: 30px 0px;
-    }
-
-    .cards {
-        width: 95% !important;
-        margin: 30px 0px;
-    }
-}
-
 @media only screen and (max-width: 1050px) {
     .heading {
         margin-left: 15% !important;
@@ -793,6 +660,16 @@ input::placeholder {
     .Apex_chart_div {
         width: 46% !important;
         margin-top: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .div {
+        width: 60% !important;
+    }
+
+    .cards {
+        width: 60% !important;
     }
 }
 
@@ -846,6 +723,16 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 630px) {
+    .div {
+        width: 80% !important;
+    }
+
+    .cards {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 630px) {
     .heading {
         margin-left: 15% !important;
     }
@@ -876,7 +763,17 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 470px) {
+@media only screen and (max-width: 498px) {
+    .div {
+        width: 85% !important;
+    }
+
+    .cards {
+        width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 470px) {
     .inner_card1 {
         width: 100%;
     }
@@ -895,7 +792,35 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 391px) {
+@media only screen and (max-width: 430px) {
+    .div {
+        width: 90% !important;
+        margin: 30px 10px;
+    }
+
+    .cards {
+        width: 90% !important;
+        margin: 30px 10px;
+    }
+
+    td {
+        padding: 3px 15px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .div {
+        width: 95% !important;
+        margin: 30px 0px;
+    }
+
+    .cards {
+        width: 95% !important;
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 391px) {
     .div_cards {
         margin-left: 70px;
     }

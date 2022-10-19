@@ -7,7 +7,6 @@ export default function BasicSwitches() {
   return (
     <div>
       <Switch {...label} defaultChecked />
-      
     </div>
   );
 }
