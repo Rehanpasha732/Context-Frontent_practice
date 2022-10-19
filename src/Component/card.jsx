@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Graph from "./graph";
 import ProgressBar from "./progressBar";
 import ApexChart from "./area.jsx";
 
 const Cards = () => {
     const [inp, setInp] = useState()
+    const [inp1, setInp1] = useState()
     let a = document.getElementById("1")
     let b = document.getElementById("2")
     let c = document.getElementById("3")
@@ -13,47 +14,60 @@ const Cards = () => {
     let tr_2 = document.getElementById("tr_2")
     let tr_3 = document.getElementById("tr_3")
     let tr_4 = document.getElementById("tr_4")
-    window.onkeydown = function (event) {
-        if (a.innerHTML === inp && event.keyCode === 13) {
-            console.log(a.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
-            tr_1.style.display = "block"
+    window.onkeydown = function (events) {
+        if (a.innerHTML === inp && events.keyCode === 13) {
+            tr_1.style.display = ""
             tr_2.style.display = "none"
             tr_3.style.display = "none"
             tr_4.style.display = "none"
         } else if (b.innerHTML === inp) {
-            console.log(b.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
             tr_1.style.display = "none"
-            tr_2.style.display = "block"
+            tr_2.style.display = ""
             tr_3.style.display = "none"
             tr_4.style.display = "none"
         } else if (c.innerHTML === inp) {
-            console.log(c.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
             tr_1.style.display = "none"
             tr_2.style.display = "none"
-            tr_3.style.display = "block"
+            tr_3.style.display = ""
             tr_4.style.display = "none"
         } else if (d.innerHTML === inp) {
-            console.log(d.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
             tr_1.style.display = "none"
             tr_2.style.display = "none"
             tr_3.style.display = "none"
-            tr_4.style.display = "block"
+            tr_4.style.display = ""
         }
     }
-    // alert("jabba")
-    // console.log(inp)
-    // console.log(a.innerHTML)
-    // console.log(b.innerHTML)
-    // console.log(c.innerHTML)
-    // console.log(d.innerHTML)
-    // console.log(a.innerText)
-    // const Search = () => {
-    //     console.log(getInput.value)
-    // }
+    let A = document.getElementById("5")
+    let B = document.getElementById("6")
+    let C = document.getElementById("7")
+    let D = document.getElementById("8")
+    let Tr_1 = document.getElementById("Tr_1")
+    let Tr_2 = document.getElementById("Tr_2")
+    let Tr_3 = document.getElementById("Tr_3")
+    let Tr_4 = document.getElementById("Tr_4")
+
+    window.onkeyup = function (event) {
+        if (A.innerHTML === inp1 && event.keyCode === 13) {
+            Tr_1.style.display = ""
+            Tr_2.style.display = "none"
+            Tr_3.style.display = "none"
+            Tr_4.style.display = "none"
+        } else if (B.innerHTML === inp1) {
+            Tr_1.style.display = "none"
+            Tr_2.style.display = ""
+            Tr_3.style.display = "none"
+            Tr_4.style.display = "none"
+        } else if (C.innerHTML === inp1) {
+            Tr_1.style.display = "none"
+            Tr_2.style.display = "none"
+            Tr_3.style.display = ""
+            Tr_4.style.display = "none"
+        } else if (D.innerHTML === inp1) {
+            Tr_1.style.display = "none"
+            Tr_2.style.display = "none"
+            Tr_3.style.display = "none"
+            Tr_4.style.display = ""
+        }}
     return (
         <div className="container">
             <div className="card_container">
@@ -65,10 +79,10 @@ const Cards = () => {
                                 <ProgressBar />
                             </div>
                             <div>
-                                <button className="btn"> <button class = "sm_btn"></button> UPLOAD FILES</button>
+                                <button className="btn"> <button class="sm_btn"></button> UPLOAD FILES</button>
                                 <br />
                                 <br />
-                                <button className="btn"><button class = "sm_btn" style={{backgroundColor:'white'}}></button> TOTAL FILES</button>
+                                <button className="btn"><button class="sm_btn" style={{ backgroundColor: 'white' }}></button> TOTAL FILES</button>
                                 <div className="percentage_div">
                                     <h4 className="percentage">77.8%</h4>
                                     <span style={{ fontSize: '24px' }} className="fa">&#xf0d8;</span>
@@ -85,10 +99,10 @@ const Cards = () => {
                                 <ProgressBar />
                             </div>
                             <div>
-                                <button className="btn"><button class = "sm_btn"></button> INSIGHTS</button>
+                                <button className="btn"><button class="sm_btn"></button> INSIGHTS</button>
                                 <br />
                                 <br />
-                                <button className="btn"><button class = "sm_btn" style={{backgroundColor:'white'}}></button>ARTIFACTS</button>
+                                <button className="btn"><button class="sm_btn" style={{ backgroundColor: 'white' }}></button>ARTIFACTS</button>
                                 <div className="percentage_div">
                                     <h4 className="percentage">77.8%</h4>
                                     <span style={{ fontSize: '24px' }} className="fa">&#xf0d8;</span>
@@ -105,10 +119,10 @@ const Cards = () => {
                                 <ProgressBar />
                             </div>
                             <div>
-                                <button className="btn"><button class = "sm_btn"></button> TIME SAVED</button>
+                                <button className="btn"><button class="sm_btn"></button> TIME SAVED</button>
                                 <br />
                                 <br />
-                                <button className="btn"><button class = "sm_btn_time" style={{backgroundColor:'white'}}></button>TIME</button>
+                                <button className="btn"><button class="sm_btn_time" style={{ backgroundColor: 'white' }}></button>TIME</button>
                                 <div className="percentage_div">
                                     <h4 className="percentage">77.8%</h4>
                                     <span style={{ fontSize: '24px' }} className="fa">&#xf0d8;</span>
@@ -118,7 +132,7 @@ const Cards = () => {
                     </div>
                 </div>
                 <div className="Apex_chart_div">
-                    <ApexChart/>
+                    <ApexChart />
                 </div>
             </div>
             <div className="graph_cards">
@@ -162,7 +176,7 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text" /></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" value={inp1} onChange={(e) => { setInp1(e.target.value) }} /></div>
                     </div>
                     <table className="table">
                         <thead>
@@ -173,23 +187,23 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                            <tr id="tr_1">
-                                <td className='row_2' id="1">Additional</td>
+                            <tr id="Tr_1">
+                                <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id="tr_2">
-                                <td className='row_2' id="2">File_new</td>
+                            <tr id="Tr_2">
+                                <td className='row_2' id="6">File_new</td>
                                 <td className='row_2'>new_123</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id="tr_3">
-                                <td className='row_2' id="3">NewData</td>
+                            <tr id="Tr_3">
+                                <td className='row_2' id="7">NewData</td>
                                 <td className='row_2'>Additional</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id="tr_4">
-                                <td className='row_2' id="4">001_new</td>
+                            <tr id="Tr_4">
+                                <td className='row_2' id="8">001_new</td>
                                 <td className='row_2'>figa</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
