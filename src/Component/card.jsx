@@ -36,16 +36,7 @@ const Cards = () => {
         tr_3.style.display = "none"
     }
 }
-// alert("jabba")
-// console.log(inp)
-// console.log(a.innerHTML)
-// console.log(b.innerHTML)
-// console.log(c.innerHTML)
-// console.log(d.innerHTML)
-    // console.log(a.innerText)
-    // const Search = () => {
-    //     console.log(getInput.value)
-    // }
+
     return (
         <div className="container">
             <div className="card_container">
