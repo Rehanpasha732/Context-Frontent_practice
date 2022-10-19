@@ -2,6 +2,7 @@ import React from "react";
 import Chart from 'react-apexcharts'
 import BasicSwitches from '../Component/switch'
 class ApexChart extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -42,7 +43,6 @@ class ApexChart extends React.Component {
     }
 
 
-
     render() {
         return (
             <div id="chart">
@@ -69,6 +69,9 @@ class ApexChart extends React.Component {
                             <h3 className="activity_h">14H</h3>
                             <span className="activity">15m</span>
                         </div>
+
+
+                       
                         <div className="spans_div">
                             <button className="sky_blue"></button>
                             <button className="blue"></button>
