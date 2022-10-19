@@ -756,6 +756,20 @@ input::placeholder {
     display: none;
 }
 
+
+.table_div{
+    overflow: scroll;
+    height: 200px;
+}
+.modal_card_inner_div{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+
+}
+.recent , h5{
+    color: var(--black);
+}
 /* Media Query */
 
 @media only screen and (max-width: 1050px) {
