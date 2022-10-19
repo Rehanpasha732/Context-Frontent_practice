@@ -156,6 +156,7 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
+                                <p id="no"></p>
                             <tr id="tr_1">
                                 <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
