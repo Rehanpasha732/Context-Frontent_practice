@@ -46,23 +46,23 @@ const Cards = () => {
             tr_4.style.display = ""
         }
     }
-    window.onkeyup = function (event) {
-        if (e.innerHTML === inp1) {
+    window.onkeyup = function () {
+        if (inp1 === "A") {
             tr_5.style.display = ""
             tr_6.style.display = "none"
             tr_7.style.display = "none"
             tr_8.style.display = "none"
-        } else if (f.innerHTML === inp1) {
+        } else if (inp1 === "F") {
             tr_5.style.display = "none"
             tr_6.style.display = ""
             tr_7.style.display = "none"
             tr_8.style.display = "none"
-        } else if (g.innerHTML === inp1) {
+        } else if (inp1 === "N") {
             tr_5.style.display = "none"
             tr_6.style.display = "none"
             tr_7.style.display = ""
             tr_8.style.display = "none"
-        } else if (h.innerHTML === inp1) {
+        } else if (inp1 === "0") {
             tr_5.style.display = "none"
             tr_6.style.display = "none"
             tr_7.style.display = "none"
@@ -142,7 +142,6 @@ const Cards = () => {
                         <div><h2 className='recent'>Recent Files</h2></div>
                         <div className="input_div"><input placeholder='Search...' type="text" value={inp} onChange={(e) => { setInp(e.target.value) }} /></div>
                     </div>
-
                     <table className="table">
                         <thead>
                             <tr className="tr">
@@ -173,6 +172,9 @@ const Cards = () => {
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                         </tbody>
+                        <div className="view_all_btn">
+                                <button className="button" ><BasicModal /></button>
+                            </div>
                     </table>
                 </div>
                 <div className="cards">
@@ -209,6 +211,9 @@ const Cards = () => {
                                 <td className='row_2'>figa</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
+                            <div className="view_all_btn">
+                                <button className="button" ><BasicModal /></button>
+                            </div>
                         </tbody>
                     </table>
                 </div>
@@ -219,11 +224,11 @@ const Cards = () => {
                     </div>
                 </div>
             </div>
-            <div className="view_all_btn_div">
+            {/* <div className="view_all_btn_div">
                 <button className="view_all_btn"><BasicModal /></button>
                 <button className="view_all_btn"><BasicModal /></button>
 
-            </div>
+            </div> */}
         </div>
     )
 }

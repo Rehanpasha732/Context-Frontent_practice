@@ -194,18 +194,21 @@ body {
     position: relative;
     bottom: 10px;
 }
-.btn_div{
+
+.btn_div {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     margin-top: -10px;
 }
-.view_btn{
+
+.view_btn {
     border: none;
     background-color: var(--background);
     color: var(--white);
     cursor: pointer;
 }
+
 .css-8793an {
     position: relative;
     border-radius: 5px;
@@ -355,6 +358,7 @@ body {
     color: blue;
     /* display: block; */
 }
+
 /* .th {
     margin: 0px 20px !important;
 } */
@@ -367,9 +371,9 @@ td {
 
 .div {
     margin: 30px 20px;
-    padding: 20px;
+    padding: 30px;
     width: 30% !important;
-    height: 250px;
+    height: 280px;
     border: 2px solid var(--white);
     border-radius: 10px;
 }
@@ -525,6 +529,7 @@ td {
     color: grey;
     width: 95%;
 }
+
 .ant-progress-inner {
     width: 85px !important;
 }
@@ -573,9 +578,11 @@ td {
     margin-left: 5px !important;
     color: var(--color2) !important;
 }
-.ant-progress-circle .ant-progress-text{
+
+.ant-progress-circle .ant-progress-text {
     color: white !important;
 }
+
 .percentage {
     color: var(--color2) !important;
     font-size: 15px;
@@ -589,6 +596,7 @@ td {
 
 .graph_div {
     height: 150px;
+    margin-top: 20px;
 }
 
 .ant-progress-text {
@@ -624,7 +632,8 @@ th {
     color: var(--white) !important;
 
 }
-.recent{
+
+.recent {
     color: var(--white) !important;
 }
 
@@ -632,21 +641,43 @@ th {
     margin-top: 5px;
 }
 
-.view_all_btn_div{
+
+.box {
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+
+.modal_card_inner_div {
     display: flex;
     justify-content: space-evenly;
-    margin-top: -10px;
-    width: 90%;
+    margin-bottom: 5px;
 }
-.view_all_btn{
+
+.button {
     background-color: transparent;
     border: none;
-    padding: 5px;
+    margin-left: 240%;
+}
+
+.input {
+    color: var(--white);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.input::placeholder {
     color: var(--white);
 }
-.view_all_btn:hover{
+
+
+.view_all_btn:hover {
     cursor: pointer;
 }
+
 tbody {
     border-top: 2px solid var(--color2) !important;
 }
