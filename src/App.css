@@ -194,7 +194,18 @@ body {
     position: relative;
     bottom: 10px;
 }
-
+.btn_div{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin-top: -10px;
+}
+.view_btn{
+    border: none;
+    background-color: var(--background);
+    color: var(--white);
+    cursor: pointer;
+}
 .css-8793an {
     position: relative;
     border-radius: 5px;
@@ -340,7 +351,7 @@ body {
     margin-top: 30px;
 }
 
-.tr {
+#tr {
     color: blue;
 }
 
