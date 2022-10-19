@@ -67,6 +67,11 @@ const Cards = () => {
             tr_6.style.display = "none"
             tr_7.style.display = "none"
             tr_8.style.display = ""
+        }else if (inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0"){
+            tr_5.style.display = "none"
+            tr_6.style.display = "none"
+            tr_7.style.display = "none"
+            tr_8.style.display = "none"
         }
     }
     return (
