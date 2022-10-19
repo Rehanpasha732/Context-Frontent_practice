@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Graph from "./graph";
 import ProgressBar from "./progressBar";
 import ApexChart from "./area.jsx";
@@ -18,7 +18,7 @@ const Cards = () => {
         if (a.innerHTML === inp && event.keyCode === 13) {
             console.log(a.innerHTML, "==>Html")
             console.log("inputValue===>", inp)
-            tr_1.style.display = "block"
+            tr_1.style.display = "flex"
             tr_2.style.display = "none"
             tr_3.style.display = "none"
             tr_4.style.display = "none"
@@ -26,7 +26,7 @@ const Cards = () => {
             console.log(b.innerHTML, "==>Html")
             console.log("inputValue===>", inp)
             tr_1.style.display = "none"
-            tr_2.style.display = "block"
+            tr_2.style.display = "flex"
             tr_3.style.display = "none"
             tr_4.style.display = "none"
         } else if (c.innerHTML === inp) {
@@ -34,7 +34,7 @@ const Cards = () => {
             console.log("inputValue===>", inp)
             tr_1.style.display = "none"
             tr_2.style.display = "none"
-            tr_3.style.display = "block"
+            tr_3.style.display = "flex"
             tr_4.style.display = "none"
         } else if (d.innerHTML === inp) {
             console.log(d.innerHTML, "==>Html")
@@ -42,10 +42,11 @@ const Cards = () => {
             tr_1.style.display = "none"
             tr_2.style.display = "none"
             tr_3.style.display = "none"
-            tr_4.style.display = "block"
+            tr_4.style.display = "flex"
         }
     }
-   
+
+
     return (
         <div className="container">
             <div className="card_container">
@@ -136,7 +137,7 @@ const Cards = () => {
                             </tr>
                             <tr id="tr_2">
                                 <td className='row_2' id="2">File_new</td>
-                                <td className='row_2'>new_123</td>
+                                <td className='row_2'>new_12213</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <tr id="tr_3">
