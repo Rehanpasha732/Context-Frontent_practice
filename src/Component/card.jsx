@@ -155,7 +155,7 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text" value={inp1}  onChange={(e)=>{setInp(e.target.value)}}/></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" value={inp1}  onChange={(e)=>{setInp1(e.target.value)}}/></div>
                     </div>
                     <table className="table">
                         <thead>
