@@ -6,47 +6,69 @@ import BasicModal from './modal'
 
 const Cards = () => {
     const [inp, setInp] = useState()
+    const [inp1, setInp1] = useState()
     let a = document.getElementById("1")
     let b = document.getElementById("2")
     let c = document.getElementById("3")
     let d = document.getElementById("4")
+    let e = document.getElementById("5")
+    let f = document.getElementById("6")
+    let g = document.getElementById("7")
+    let h = document.getElementById("8")
     let tr_1 = document.getElementById("tr_1")
     let tr_2 = document.getElementById("tr_2")
     let tr_3 = document.getElementById("tr_3")
     let tr_4 = document.getElementById("tr_4")
+    let tr_5 = document.getElementById("tr_5")
+    let tr_6 = document.getElementById("tr_6")
+    let tr_7 = document.getElementById("tr_7")
+    let tr_8 = document.getElementById("tr_8")
     window.onkeydown = function (event) {
         if (a.innerHTML === inp && event.keyCode === 13) {
-            console.log(a.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
-            tr_1.style.display = "flex"
+            tr_1.style.display = ""
             tr_2.style.display = "none"
             tr_3.style.display = "none"
             tr_4.style.display = "none"
         } else if (b.innerHTML === inp) {
-            console.log(b.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
             tr_1.style.display = "none"
-            tr_2.style.display = "flex"
+            tr_2.style.display = ""
             tr_3.style.display = "none"
             tr_4.style.display = "none"
         } else if (c.innerHTML === inp) {
-            console.log(c.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
             tr_1.style.display = "none"
             tr_2.style.display = "none"
-            tr_3.style.display = "flex"
+            tr_3.style.display = ""
             tr_4.style.display = "none"
         } else if (d.innerHTML === inp) {
-            console.log(d.innerHTML, "==>Html")
-            console.log("inputValue===>", inp)
             tr_1.style.display = "none"
             tr_2.style.display = "none"
             tr_3.style.display = "none"
-            tr_4.style.display = "flex"
+            tr_4.style.display = ""
         }
     }
-
-
+    window.onkeyup = function (event) {
+        if (e.innerHTML === inp1) {
+            tr_5.style.display = ""
+            tr_6.style.display = "none"
+            tr_7.style.display = "none"
+            tr_8.style.display = "none"
+        } else if (f.innerHTML === inp1) {
+            tr_5.style.display = "none"
+            tr_6.style.display = ""
+            tr_7.style.display = "none"
+            tr_8.style.display = "none"
+        } else if (g.innerHTML === inp1) {
+            tr_5.style.display = "none"
+            tr_6.style.display = "none"
+            tr_7.style.display = ""
+            tr_8.style.display = "none"
+        } else if (h.innerHTML === inp1) {
+            tr_5.style.display = "none"
+            tr_6.style.display = "none"
+            tr_7.style.display = "none"
+            tr_8.style.display = ""
+        }
+    }
     return (
         <div className="container">
             <div className="card_container">
@@ -123,10 +145,10 @@ const Cards = () => {
 
                     <table className="table">
                         <thead>
-                            <tr id='tr'>
-                                <th>File Name</th>
-                                <th>Project</th>
-                                <th>Time</th>
+                            <tr className="tr">
+                                <th className="th">File Name</th>
+                                <th className="th">Project</th>
+                                <th className="th">Time</th>
                             </tr>
                         </thead>
                         <tbody id="tbody">
@@ -156,7 +178,7 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text" /></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" value={inp1} onChange={(e) => { setInp1(e.target.value) }} /></div>
                     </div>
                     <table className="table">
                         <thead>
@@ -167,23 +189,23 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                            <tr id="tr_1">
-                                <td className='row_2' id="1">Additional</td>
+                            <tr id="tr_5">
+                                <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id="tr_2">
-                                <td className='row_2' id="2">File_new</td>
+                            <tr id="tr_6">
+                                <td className='row_2' id="6">File_new</td>
                                 <td className='row_2'>new_123</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id="tr_3">
-                                <td className='row_2' id="3">NewData</td>
+                            <tr id="tr_7">
+                                <td className='row_2' id="7">NewData</td>
                                 <td className='row_2'>Additional</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
-                            <tr id="tr_4">
-                                <td className='row_2' id="4">001_new</td>
+                            <tr id="tr_8">
+                                <td className='row_2' id="8">001_new</td>
                                 <td className='row_2'>figa</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
