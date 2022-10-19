@@ -18,147 +18,152 @@ const style = {
 };
 
 export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
-  return (
-    <div>
-      <Button onClick={handleOpen}>View All</Button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style} style={{overflow:'scroll'}}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-                    <table className="table modalTable">
-                        <thead>
-                            <tr className='tr'>
-                                <th>File Name</th>
-                                <th>Project</th>
-                                <th>Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                            <tr >
-                                <td className='row_2'>File_new</td>
-                                <td className='row_2'>new_123</td>
-                                <td className='row_2'>10:45:60 AM</td>
-                            </tr>
-                        </tbody>
-                    </table>              
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-          </Typography>
-        </Box>
-      </Modal>
-    </div>
-  );
+    return (
+        <div>
+            <Button onClick={handleOpen} style={{ fontSize: '10px' }}>View All</Button>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={style} className="box">
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <div className="modal_card_inner_div">
+                            <div><h5 className='recent'>Recent Files</h5></div>
+                            <div><input  className='input' placeholder='Search...' type="text" /></div>
+                        </div>
+                        <table className="table modalTable">
+
+                            <thead>
+                                <tr className='tr'>
+                                    <th>File Name</th>
+                                    <th>Project</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>File_new</td>
+                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </Typography>
+                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                    </Typography>
+                </Box>
+            </Modal>
+        </div>
+    );
 }
