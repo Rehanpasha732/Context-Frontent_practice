@@ -45,16 +45,6 @@ const Cards = () => {
             tr_4.style.display = "block"
         }
     }
-    // alert("jabba")
-    // console.log(inp)
-    // console.log(a.innerHTML)
-    // console.log(b.innerHTML)
-    // console.log(c.innerHTML)
-    // console.log(d.innerHTML)
-    // console.log(a.innerText)
-    // const Search = () => {
-    //     console.log(getInput.value)
-    // }
     return (
         <div className="container">
             <div className="card_container">
@@ -131,10 +121,10 @@ const Cards = () => {
 
                     <table className="table">
                         <thead>
-                            <tr id='tr'>
-                                <th>File Name</th>
-                                <th>Project</th>
-                                <th>Time</th>
+                            <tr className="tr">
+                                <th className="th">File Name</th>
+                                <th className="th">Project</th>
+                                <th className="th">Time</th>
                             </tr>
                         </thead>
                         <tbody id="tbody">
