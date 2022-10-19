@@ -153,6 +153,10 @@ const Cards = () => {
                     </div>
                 </div>
             </div>
+            <div className="btn_div">
+                <button className="view_btn">View All</button>
+                <button className="view_btn">View All</button>
+            </div>
         </div>
     )
 }
