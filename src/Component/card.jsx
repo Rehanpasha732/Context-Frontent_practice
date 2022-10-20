@@ -24,6 +24,7 @@ const Cards = () => {
     let tr_7 = document.getElementById("tr_7")
     let tr_8 = document.getElementById("tr_8")
     let no_data = document.getElementById("no_data")
+    // let input = document.getElementById("input").value
     window.onkeydown = function (event) {
         if (a.innerHTML === inp && event.keyCode === 13) {
             tr_1.style.display = ""
@@ -78,8 +79,8 @@ const Cards = () => {
             tr_7.style.display = "none"
             tr_8.style.display = "none"
             no_data.innerHTML = "No Data Found"
+            console.log("inputValue",inp1)
         }else if (inp1 === "") {
-            alert("jbaba")
             tr_5.style.display = ""
             tr_6.style.display = ""
             tr_7.style.display = ""
@@ -198,7 +199,7 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text" value={inp1} onChange={(e) => { setInp1(e.target.value) }} /></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" id = "input" value={inp1} onChange={(e) => { setInp1(e.target.value) }} /></div>
                     </div>
                     <table className="table">
                         <thead>
