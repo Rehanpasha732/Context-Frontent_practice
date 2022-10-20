@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Graph from "./graph";
 import ProgressBar from "./progressBar";
 import ApexChart from "./area.jsx";
 import BasicModal from './modal'
+
 
 const Cards = () => {
     const [inp, setInp] = useState()
@@ -177,7 +178,8 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                                <p id="no_data"></p>
+                        <p id="no_data"></p>
+
                             <tr id="tr_1">
                                 <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
@@ -185,7 +187,7 @@ const Cards = () => {
                             </tr>
                             <tr id="tr_2">
                                 <td className='row_2' id="2">File_new</td>
-                                <td className='row_2'>new_123</td>
+                                <td className='row_2'>new_12213</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <tr id="tr_3">
@@ -215,8 +217,10 @@ const Cards = () => {
                                 <th>File Name</th>
                                 <th>Project</th>
                                 <th>Time</th>
-                            </tr>
+                            </tr> 
+                            <p></p>
                         </thead>
+                       
                         <tbody id="tbody">
                             <p id="no_data"></p>
                             <tr id="tr_5">
@@ -240,7 +244,7 @@ const Cards = () => {
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <div className="view_all_btn">
-                                <button className="button" ><BasicModal /></button>
+                                <button className="button" ><BasicModal/></button>
                             </div>
                         </tbody>
                     </table>

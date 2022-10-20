@@ -643,8 +643,6 @@ th {
 
 
 .box {
-    overflow: scroll;
-    overflow-x: hidden;
     border: 2px solid black;
     border-radius: 20px;
 }
@@ -657,6 +655,16 @@ th {
     margin-bottom: 5px;
 }
 
+.table_box {
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+.table_box::-webkit-scrollbar {
+    display:none
+  }
 .button {
     background-color: transparent;
     border: none;
@@ -672,7 +680,6 @@ th {
 .input::placeholder {
     color: var(--white);
 }
-
 
 .view_all_btn:hover {
     cursor: pointer;
@@ -767,6 +774,20 @@ input::placeholder {
     display: none;
 }
 
+
+.table_div{
+    overflow: scroll;
+    height: 200px;
+}
+.modal_card_inner_div{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+
+}
+.recent , h5{
+    color: var(--black);
+}
 /* Media Query */
 
 @media only screen and (max-width: 1050px) {

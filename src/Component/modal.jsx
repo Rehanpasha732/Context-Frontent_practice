@@ -5,17 +5,17 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '45vmax',
-    bgcolor: '#12131a',
-    boxShadow: 24,
-    p: 4,
-    height: '300px',
-    backgroundColor: '#12131a',
-    
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '45vmax',
+  bgcolor: '#12131a',
+  boxShadow: 24,
+  p: 4,
+  height: '300px',
+  backgroundColor:'#12131a',
+   
 };
 
 export default function BasicModal() {
@@ -32,14 +32,15 @@ export default function BasicModal() {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box sx={style} className="box">
+                <Box sx={style} >
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         <div className="modal_card_inner_div">
                             <div><h5 className='recent'>Recent Files</h5></div>
-                            <div><input  className='input' placeholder='Search...' type="text" /></div>
+                            <div><input className='input' placeholder='Search...' type="text" /></div>
                         </div>
-                        <table className="table modalTable">
 
+                        <div className="table_box">
+                        <table className="table modalTable">
                             <thead>
                                 <tr className='tr'>
                                     <th>File Name</th>
@@ -54,8 +55,8 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>Access</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -64,8 +65,13 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>NewData</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>001_new</td>
+                                    <td className='row_2'>figa</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -74,8 +80,8 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>Access</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -84,8 +90,13 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>NewData</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>001_new</td>
+                                    <td className='row_2'>figa</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -94,8 +105,8 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>Access</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -104,8 +115,13 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>NewData</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>001_new</td>
+                                    <td className='row_2'>figa</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -114,8 +130,8 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>Access</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -124,8 +140,13 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>NewData</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>10:45:60 AM</td>
+                                </tr>
+                                <tr >
+                                    <td className='row_2'>001_new</td>
+                                    <td className='row_2'>figa</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -134,8 +155,8 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>Additional</td>
+                                    <td className='row_2'>Access</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
@@ -144,22 +165,17 @@ export default function BasicModal() {
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>NewData</td>
+                                    <td className='row_2'>Additional</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                                 <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
-                                    <td className='row_2'>10:45:60 AM</td>
-                                </tr>
-                                <tr >
-                                    <td className='row_2'>File_new</td>
-                                    <td className='row_2'>new_123</td>
+                                    <td className='row_2'>001_new</td>
+                                    <td className='row_2'>figa</td>
                                     <td className='row_2'>10:45:60 AM</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                     </Typography>
