@@ -40,7 +40,6 @@ function getItem(label, key, icon, children, type) {
 }
 
 const items = [
-    // getItem(<img className='img' src={logo} />, '0'),
     getItem('Dashboard', '1', <AppstoreOutlined />),
     getItem('Home', '2', <HomeOutlined />),
     getItem('Analytics', '4', <ChromeOutlined />),
