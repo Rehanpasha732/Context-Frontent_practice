@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const style = {
-<<<<<<< Updated upstream
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -15,20 +14,8 @@ const style = {
   boxShadow: 24,
   p: 4,
   height: '300px',
-  backgroundColor:'white',
-=======
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '45vmax',
-    bgcolor: '#12131a',
-    boxShadow: 24,
-    p: 4,
-    height: '300px',
-    backgroundColor: '#12131a',
-
->>>>>>> Stashed changes
+  backgroundColor:'#12131a',
+   
 };
 
 export default function BasicModal() {
@@ -51,12 +38,6 @@ export default function BasicModal() {
                             <div><h5 className='recent'>Recent Files</h5></div>
                             <div><input className='input' placeholder='Search...' type="text" /></div>
                         </div>
-<<<<<<< Updated upstream
-
-                        <div className="table_div">
-                        <table className="table modalTable box">
-=======
->>>>>>> Stashed changes
 
                         <div className="table_box">
                         <table className="table modalTable">
