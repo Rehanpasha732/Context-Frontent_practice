@@ -18,64 +18,39 @@ const Cards = () => {
     let tr_2 = document.getElementById("tr_2")
     let tr_3 = document.getElementById("tr_3")
     let tr_4 = document.getElementById("tr_4")
-    let tr_5 = document.getElementById("tr_5")
-    let tr_6 = document.getElementById("tr_6")
-    let tr_7 = document.getElementById("tr_7")
-    let tr_8 = document.getElementById("tr_8")
-    useEffect(() => {
-        window.onkeyup = function (events){
-            if ('A' === inp || 'Additional' === inp || 'Ad' === inp ) {
-                tr_1.style.display = ""
-                tr_2.style.display = "none"
-                tr_3.style.display = "none"
-                tr_4.style.display = "none"
-            } else if (b.innerHTML === inp) {
-                tr_1.style.display = "none"
-                tr_2.style.display = ""
-                tr_3.style.display = "none"
-                tr_4.style.display = "none"
-            } else if (c.innerHTML === inp) {
-                tr_1.style.display = "none"
-                tr_2.style.display = "none"
-                tr_3.style.display = ""
-                tr_4.style.display = "none"
-            } else if (d.innerHTML === inp) {
-                tr_1.style.display = "none"
-                tr_2.style.display = "none"
-                tr_3.style.display = "none"
-                tr_4.style.display = ""   
-            }
-            else {
-                tr_1.style.display = ""
-                tr_2.style.display = ""
-                tr_3.style.display = ""
-                tr_4.style.display = ""   
-            }
-        }
-    }, [inp]);
-    window.onkeyup = function (event) {
-        if (e.innerHTML === inp1 && event.keyCode === 13) {
-            tr_5.style.display = ""
-            tr_6.style.display = "none"
-            tr_7.style.display = "none"
-            tr_8.style.display = "none"
-        } else if (f.innerHTML === inp1) {
-            tr_5.style.display = "none"
-            tr_6.style.display = ""
-            tr_7.style.display = "none"
-            tr_8.style.display = "none"
-        } else if (g.innerHTML === inp1) {
-            tr_5.style.display = "none"
-            tr_6.style.display = "none"
-            tr_7.style.display = ""
-            tr_8.style.display = "none"
-        } else if (h.innerHTML === inp1) {
-            tr_5.style.display = "none"
-            tr_6.style.display = "none"
-            tr_7.style.display = "none"
-            tr_8.style.display = ""
+    window.onkeydown = function (event) {
+        if (a.innerHTML === inp && event.keyCode === 13) {
+            console.log(a.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "flex"
+            tr_2.style.display = "none"
+            tr_3.style.display = "none"
+            tr_4.style.display = "none"
+        } else if (b.innerHTML === inp) {
+            console.log(b.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "none"
+            tr_2.style.display = "flex"
+            tr_3.style.display = "none"
+            tr_4.style.display = "none"
+        } else if (c.innerHTML === inp) {
+            console.log(c.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "none"
+            tr_2.style.display = "none"
+            tr_3.style.display = "flex"
+            tr_4.style.display = "none"
+        } else if (d.innerHTML === inp) {
+            console.log(d.innerHTML, "==>Html")
+            console.log("inputValue===>", inp)
+            tr_1.style.display = "none"
+            tr_2.style.display = "none"
+            tr_3.style.display = "none"
+            tr_4.style.display = "flex"
         }
     }
+
+
     return (
         <div className="container">
             <div className="card_container">
@@ -165,7 +140,7 @@ const Cards = () => {
                             </tr>
                             <tr id="tr_2">
                                 <td className='row_2' id="2">File_new</td>
-                                <td className='row_2'>new_123</td>
+                                <td className='row_2'>new_12213</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <tr id="tr_3">
