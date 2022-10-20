@@ -24,32 +24,29 @@ const Cards = () => {
     let tr_7 = document.getElementById("tr_7")
     let tr_8 = document.getElementById("tr_8")
     let no_data = document.getElementById("no_data")
-    // let input = document.getElementById("input").value
-    window.onkeydown = function (event) {
-        if (a.innerHTML === inp && event.keyCode === 13) {
+    window.onkeyup = function () {
+        if (inp === "A") {
             tr_1.style.display = ""
             tr_2.style.display = "none"
             tr_3.style.display = "none"
             tr_4.style.display = "none"
-        } else if (b.innerHTML === inp) {
+        } else if (inp === "F") {
             tr_1.style.display = "none"
             tr_2.style.display = ""
             tr_3.style.display = "none"
             tr_4.style.display = "none"
-        } else if (c.innerHTML === inp) {
+        } else if (inp === "N") {
             tr_1.style.display = "none"
             tr_2.style.display = "none"
             tr_3.style.display = ""
             tr_4.style.display = "none"
-        } else if (d.innerHTML === inp) {
+        } else if (inp === "0") {
             tr_1.style.display = "none"
             tr_2.style.display = "none"
             tr_3.style.display = "none"
             tr_4.style.display = ""
         }
-    }
-    window.onkeyup = function () {
-        if (inp1 === "A") {
+        else if (inp1 === "A") {
             tr_5.style.display = ""
             tr_6.style.display = "none"
             tr_7.style.display = "none"
@@ -73,19 +70,29 @@ const Cards = () => {
             tr_7.style.display = "none"
             tr_8.style.display = ""
             no_data.innerHTML = ""
-        } else if (inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0") {
-            tr_5.style.display = "none"
-            tr_6.style.display = "none"
-            tr_7.style.display = "none"
-            tr_8.style.display = "none"
-            no_data.innerHTML = "No Data Found"
-            console.log("inputValue",inp1)
-        }else if (inp1 === "") {
+        }
+        // else if (inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0" && inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0") {
+        //     tr_5.style.display = "none"
+        //     tr_6.style.display = "none"
+        //     tr_7.style.display = "none"
+        //     tr_8.style.display = "none"
+        //     no_data.innerHTML = "No Data Found"
+        // }
+        //  else if (inp1 === " ") {
+        //     tr_5.style.display = ""
+        //     tr_6.style.display = ""
+        //     tr_7.style.display = ""
+        //     tr_8.style.display = ""
+        // }
+        else {
+            tr_1.style.display = ""
+            tr_2.style.display = ""
+            tr_3.style.display = ""
+            tr_4.style.display = ""
             tr_5.style.display = ""
             tr_6.style.display = ""
             tr_7.style.display = ""
             tr_8.style.display = ""
-            no_data.style.display = "none"
         }
     }
     return (
@@ -170,6 +177,7 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
+                                <p id="no_data"></p>
                             <tr id="tr_1">
                                 <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
@@ -199,7 +207,7 @@ const Cards = () => {
                 <div className="cards">
                     <div className="cards_inner_div">
                         <div><h2 className='recent'>Recent Files</h2></div>
-                        <div className="input_div"><input placeholder='Search...' type="text" id = "input" value={inp1} onChange={(e) => { setInp1(e.target.value) }} /></div>
+                        <div className="input_div"><input placeholder='Search...' type="text" value={inp1} onChange={(e) => { setInp1(e.target.value) }} /></div>
                     </div>
                     <table className="table">
                         <thead>
