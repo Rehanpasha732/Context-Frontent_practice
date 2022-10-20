@@ -8,14 +8,6 @@ import BasicModal from './modal'
 const Cards = () => {
     const [inp, setInp] = useState()
     const [inp1, setInp1] = useState()
-    let a = document.getElementById("1")
-    let b = document.getElementById("2")
-    let c = document.getElementById("3")
-    let d = document.getElementById("4")
-    let e = document.getElementById("5")
-    let f = document.getElementById("6")
-    let g = document.getElementById("7")
-    let h = document.getElementById("8")
     let tr_1 = document.getElementById("tr_1")
     let tr_2 = document.getElementById("tr_2")
     let tr_3 = document.getElementById("tr_3")
@@ -171,39 +163,38 @@ const Cards = () => {
                     </div>
                     <table className="table">
                         <thead>
-                            <tr className="tr">
-                                <th className="th">File Name</th>
-                                <th className="th">Project</th>
-                                <th className="th">Time</th>
-                            </tr>
+                            <tr className='tr'>
+                                <th>File Name</th>
+                                <th>Project</th>
+                                <th>Time</th>
+                            </tr> 
                         </thead>
                         <tbody id="tbody">
-                        <p id="no_data"></p>
-
+                            {/* <p id="no_data"></p> */}
                             <tr id="tr_1">
-                                <td className='row_2' id="1">Additional</td>
+                                <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <tr id="tr_2">
-                                <td className='row_2' id="2">File_new</td>
-                                <td className='row_2'>new_12213</td>
+                                <td className='row_2' id="6">File_new</td>
+                                <td className='row_2'>new_123</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <tr id="tr_3">
-                                <td className='row_2' id="3">NewData</td>
+                                <td className='row_2' id="7">NewData</td>
                                 <td className='row_2'>Additional</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <tr id="tr_4">
-                                <td className='row_2' id="4">001_new</td>
+                                <td className='row_2' id="8">001_new</td>
                                 <td className='row_2'>figa</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
+                            <div className="view_all_btn">
+                                <button className="button" ><BasicModal/></button>
+                            </div>
                         </tbody>
-                        <div className="view_all_btn">
-                            <button className="button" ><BasicModal /></button>
-                        </div>
                     </table>
                 </div>
                 <div className="cards">
@@ -218,11 +209,9 @@ const Cards = () => {
                                 <th>Project</th>
                                 <th>Time</th>
                             </tr> 
-                            <p></p>
                         </thead>
-                       
                         <tbody id="tbody">
-                            <p id="no_data"></p>
+                            {/* <p id="no_data"></p> */}
                             <tr id="tr_5">
                                 <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
