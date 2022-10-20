@@ -14,7 +14,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    color: var(--white) !important;
+    /* color: var(--white) !important; */
 }
 
 body {
@@ -85,7 +85,16 @@ body {
     background-color: #5494a3;
     height: 8px;
     width: 8px;
-    margin-right: 3px;
+    margin-right: 10px;
+    border: none;
+}
+
+.sm_btn_time {
+    border-radius: 2px;
+    background-color: #5494a3;
+    height: 8px;
+    width: 8px;
+    margin-right: 40px;
     border: none;
 }
 
@@ -186,6 +195,20 @@ body {
     bottom: 10px;
 }
 
+.btn_div {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin-top: -10px;
+}
+
+.view_btn {
+    border: none;
+    background-color: var(--background);
+    color: var(--white);
+    cursor: pointer;
+}
+
 .css-8793an {
     position: relative;
     border-radius: 5px;
@@ -220,12 +243,25 @@ body {
     background-color: var(--color2);
 }
 
+
+
 .notification {
     padding-right: 10px;
     height: 30px;
     padding-bottom: 20px;
     width: 50px;
     border-radius: 20px;
+    background-color: #5494a3;
+}
+
+.notification_icon {
+    /* background-color: aqua; */
+    margin-top: 5px;
+}
+
+.css-fvc8ir-MuiBadge-badge {
+    margin-top: 11px;
+    margin-right: -4px;
 }
 
 .css-ptiqhd-MuiSvgIcon-root {
@@ -317,18 +353,27 @@ body {
     width: 100%;
     margin-top: 30px;
 }
+
 .tr {
     color: blue;
+    /* display: block; */
 }
 
+/* .th {
+    margin: 0px 20px !important;
+} */
+/* #tr_1,#tr_2,#tr_3,#tr_4{
+    display: block;
+} */
 td {
     padding: 5px 20px;
 }
+
 .div {
     margin: 30px 20px;
-    padding: 20px;
+    padding: 30px;
     width: 30% !important;
-    height: 250px;
+    height: 280px;
     border: 2px solid var(--white);
     border-radius: 10px;
 }
@@ -342,64 +387,78 @@ td {
     color: var(--white);
     padding-bottom: 20px;
 }
+
 @media only screen and (max-width: 1115px) {
-    .div{
+    .div {
         width: 50% !important;
     }
-    .cards{
+
+    .cards {
         width: 45% !important;
     }
 }
+
 @media only screen and (max-width: 998px) {
-    .div{
+    .div {
         width: 60% !important;
     }
-    .cards{
+
+    .cards {
         width: 60% !important;
     }
 }
+
 @media only screen and (max-width: 630px) {
-    .div{
+    .div {
         width: 80% !important;
     }
-    .cards{
+
+    .cards {
         width: 80% !important;
     }
 }
+
 @media only screen and (max-width: 498px) {
-    .div{
+    .div {
         width: 85% !important;
     }
-    .cards{
+
+    .cards {
         width: 85% !important;
     }
 }
+
 @media only screen and (max-width: 430px) {
-    .div{
+    .div {
         width: 90% !important;
         margin: 30px 10px;
     }
-    .cards{
+
+    .cards {
         width: 90% !important;
         margin: 30px 10px;
     }
+
     td {
         padding: 3px 15px;
     }
 }
+
 @media only screen and (max-width: 410px) {
-    .div{
+    .div {
         width: 95% !important;
         margin: 30px 0px;
     }
-    .cards{
+
+    .cards {
         width: 95% !important;
         margin: 30px 0px;
     }
 }
+
 .graph_cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .MuiTypography-root,
@@ -463,11 +522,12 @@ td {
 }
 
 
-table {
+.table {
     margin: 0px auto;
     text-align: center;
     font-size: 15px;
     color: grey;
+    width: 95%;
 }
 
 .ant-progress-inner {
@@ -477,6 +537,7 @@ table {
 .ant-progress-circle .ant-progress-text {
     top: 35% !important;
 }
+
 .btn {
     height: 30px;
     width: 100px;
@@ -505,6 +566,7 @@ table {
 
 .heading {
     margin-left: 20px;
+    color: var(--white);
 }
 
 .percentage_div {
@@ -515,6 +577,10 @@ table {
 .fa {
     margin-left: 5px !important;
     color: var(--color2) !important;
+}
+
+.ant-progress-circle .ant-progress-text {
+    color: white !important;
 }
 
 .percentage {
@@ -530,15 +596,17 @@ table {
 
 .graph_div {
     height: 150px;
+    margin-top: 20px;
 }
 
 .ant-progress-text {
     width: 50% !important;
 }
 
-.margin{
+.margin {
     margin-left: 82px;
 }
+
 .graph_heading {
     margin-left: 20px;
 }
@@ -561,10 +629,53 @@ th {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    color: var(--white) !important;
+
+}
+
+.recent {
+    color: var(--white) !important;
 }
 
 .input_div {
     margin-top: 5px;
+}
+
+
+.box {
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+
+.modal_card_inner_div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    margin-left: 240%;
+}
+
+.input {
+    color: var(--white);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.input::placeholder {
+    color: var(--white);
+}
+
+
+.view_all_btn:hover {
+    cursor: pointer;
 }
 
 tbody {
@@ -824,16 +935,16 @@ input::placeholder {
 } */
 
 @media screen and (max-width: 391px) {
-
-    /* .cards,
-    .div {
-        width: 98% !important;
-        margin: 9px 0px !important;
-        height: auto;
-    } */
+    .div_cards {
+        margin-left: 70px;
+    }
 
     .apexcharts-canvas .apexcharts-element-hidden {
         display: none;
+    }
+
+    .css-6hp17o-MuiList-root-MuiMenu-list {
+        color: #12131a !important;
     }
 
     .inner_card1,
@@ -843,12 +954,22 @@ input::placeholder {
         margin: 9px 0px !important;
         width: 95% !important;
     }
-    .graph_cards{
+
+    .graph_cards {
         margin: 0%;
     }
-}
-/* @media only screen and (max-width: 375px) {
-    .margin {
-       margin-left: 60px !important;
+
+    .spans_div {
+        display: none;
     }
-} */
+
+    td {
+        padding: 3px 4px !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .css-hyum1k-MuiToolbar-root {
+        width: auto !important;
+    }
+}
