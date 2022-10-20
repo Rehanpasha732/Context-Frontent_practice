@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Graph from "./graph";
 import ProgressBar from "./progressBar";
 import ApexChart from "./area.jsx";
@@ -63,19 +63,6 @@ const Cards = () => {
             tr_8.style.display = ""
             no_data.innerHTML = ""
         }
-        // else if (inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0" && inp1 !== "A" && inp1 !== "F" && inp1 !== "N" && inp1 !== "0") {
-        //     tr_5.style.display = "none"
-        //     tr_6.style.display = "none"
-        //     tr_7.style.display = "none"
-        //     tr_8.style.display = "none"
-        //     no_data.innerHTML = "No Data Found"
-        // }
-        //  else if (inp1 === " ") {
-        //     tr_5.style.display = ""
-        //     tr_6.style.display = ""
-        //     tr_7.style.display = ""
-        //     tr_8.style.display = ""
-        // }
         else {
             tr_1.style.display = ""
             tr_2.style.display = ""
@@ -169,7 +156,6 @@ const Cards = () => {
                             </tr> 
                         </thead>
                         <tbody id="tbody">
-                            {/* <p id="no_data"></p> */}
                             <tr id="tr_1">
                                 <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
@@ -210,7 +196,6 @@ const Cards = () => {
                             </tr> 
                         </thead>
                         <tbody id="tbody">
-                            {/* <p id="no_data"></p> */}
                             <tr id="tr_5">
                                 <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
