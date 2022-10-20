@@ -641,9 +641,6 @@ th {
     margin-top: 5px;
 }
 
-<<<<<<< Updated upstream
-.view_all_btn_div {
-=======
 
 .box {
     border: 2px solid black;
@@ -653,15 +650,11 @@ th {
 
 
 .modal_card_inner_div {
->>>>>>> Stashed changes
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5px;
 }
 
-<<<<<<< Updated upstream
-.view_all_btn {
-=======
 .table_box {
     height: 200px;
     overflow: scroll;
@@ -673,7 +666,6 @@ th {
     display:none
   }
 .button {
->>>>>>> Stashed changes
     background-color: transparent;
     border: none;
     margin-left: 240%;
