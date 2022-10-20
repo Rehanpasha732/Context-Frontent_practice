@@ -172,13 +172,12 @@ const Cards = () => {
                     <table className="table">
                         <thead>
                             <tr className="tr">
-                                <th className="th">File Name</th>
-                                <th className="th">Project</th>
-                                <th className="th">Time</th>
+                                <th >File Name</th>
+                                <th>Project</th>
+                                <th >Time</th>
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                                <p id="no_data"></p>
                             <tr id="tr_1">
                                 <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
@@ -186,7 +185,7 @@ const Cards = () => {
                             </tr>
                             <tr id="tr_2">
                                 <td className='row_2' id="2">File_new</td>
-                                <td className='row_2'>new_12213</td>
+                                <td className='row_2'>new_122</td>
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <tr id="tr_3">
@@ -216,12 +215,10 @@ const Cards = () => {
                                 <th>File Name</th>
                                 <th>Project</th>
                                 <th>Time</th>
-                            </tr> 
-                            <p></p>
+                            </tr>
                         </thead>
-                       
+
                         <tbody id="tbody">
-                            <p id="no_data"></p>
                             <tr id="tr_5">
                                 <td className='row_2' id="5">Additional</td>
                                 <td className='row_2' >Access</td>
@@ -243,7 +240,7 @@ const Cards = () => {
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <div className="view_all_btn">
-                                <button className="button" ><BasicModal/></button>
+                                <button className="button" ><BasicModal /></button>
                             </div>
                         </tbody>
                     </table>

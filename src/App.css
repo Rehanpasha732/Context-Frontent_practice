@@ -681,6 +681,7 @@ th {
     color: var(--white);
 }
 
+
 .view_all_btn:hover {
     cursor: pointer;
 }
