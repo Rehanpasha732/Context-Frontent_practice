@@ -641,13 +641,39 @@ th {
     margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 .view_all_btn_div {
+=======
+
+.box {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+
+.modal_card_inner_div {
+>>>>>>> Stashed changes
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5px;
 }
 
+<<<<<<< Updated upstream
 .view_all_btn {
+=======
+.table_box {
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+.table_box::-webkit-scrollbar {
+    display:none
+  }
+.button {
+>>>>>>> Stashed changes
     background-color: transparent;
     border: none;
     margin-left: 240%;

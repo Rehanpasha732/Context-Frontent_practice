@@ -4,6 +4,7 @@ import ProgressBar from "./progressBar";
 import ApexChart from "./area.jsx";
 import BasicModal from './modal'
 
+
 const Cards = () => {
     const [inp, setInp] = useState()
     const [inp1, setInp1] = useState()
@@ -169,6 +170,8 @@ const Cards = () => {
                             </tr>
                         </thead>
                         <tbody id="tbody">
+                        <p id="no_data"></p>
+
                             <tr id="tr_1">
                                 <td className='row_2' id="1">Additional</td>
                                 <td className='row_2' >Access</td>
@@ -233,7 +236,7 @@ const Cards = () => {
                                 <td className='row_2'>10:45:60 AM</td>
                             </tr>
                             <div className="view_all_btn">
-                                <button className="button" ><BasicModal /></button>
+                                <button className="button" ><BasicModal/></button>
                             </div>
                         </tbody>
                     </table>
